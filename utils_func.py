@@ -4,15 +4,19 @@ import os
 import pdb
 import random
 import time
-
+from tqdm import tqdm
 import dgl
 import numpy as np
 import torch
 from sklearn.metrics import roc_auc_score, jaccard_score
+import logging
 
 from baseline.IFRU import IFRU
 
 TOP_Ks = [20, 50, 100]
+
+# Add this near the top of the file
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 def parse_args(parser):
@@ -39,7 +43,9 @@ def parse_args(parser):
     parser.add_argument('--test_sim', action='store_true',
                         help='Calculate the Jaccard similarity between recommendation '
                              'lists of the retrain and unlearned model')
-    return parser.parse_args()
+    args = parser.parse_args()
+    logging.info(f'Parsed arguments: {args}')
+    return args
 
 
 def create_train_graph(train_records, params):
@@ -277,7 +283,7 @@ def read_dataset(dataset, test_method, percentage):
     test_records = []
     unlearn_records = collections.defaultdict(list)
     file = open(f'dataset/{dataset}/train.txt', 'r')
-    for line in file.readlines():
+    for line in tqdm(file.readlines(), desc="Reading train.txt"):
         ele = line.strip().split(' ')
         user, items = ele[0], ele[1:]
         u_num = max(u_num, int(user))
@@ -290,7 +296,7 @@ def read_dataset(dataset, test_method, percentage):
     # validation set for accuracy test
     val_fn = f'dataset/{dataset}/test_auc.txt'
     file = open(val_fn, 'r')
-    for line in file.readlines():
+    for line in tqdm(file.readlines(), desc="Reading test_auc.txt"):
         ele = line.strip().split('\t')
         user, item, label = int(ele[0]), int(ele[1]), int(ele[2])
         val_records['auc'].append(((user, item), label))
@@ -303,7 +309,7 @@ def read_dataset(dataset, test_method, percentage):
     if test_method == 'ori':
         test_fn = f'dataset/{dataset}/unlearn_test/intr_0.01.txt'
     file = open(test_fn, 'r')
-    for line in file.readlines():
+    for line in tqdm(file.readlines(), desc="Reading unlearn_test.txt"):
         ele = line.strip().split('\t')
         user, item, label = int(ele[0]), int(ele[1]), int(ele[2])
         test_records.append(((user, item), label))
@@ -311,7 +317,7 @@ def read_dataset(dataset, test_method, percentage):
 
     if test_method != 'ori':
         file = open(f'dataset/{dataset}/unlearn_set/{test_method}_{percentage}.txt', 'r')
-        for line in file.readlines():
+        for line in tqdm(file.readlines(), desc="Reading unlearn_set.txt"):
             ele = line.strip().split(' ')
             user, items = ele[0], ele[1:]
             for item in items:
@@ -323,7 +329,7 @@ def read_dataset(dataset, test_method, percentage):
               'num_train_intrs': r_num,
               'device': 'cuda' if torch.cuda.is_available() else 'cpu',
               'dataset': dataset}
-    print(f'Read {dataset} dataset done! u_num: {u_num + 1}, i_num: {i_num + 1}')
+    logging.info(f'Read {dataset} dataset done! u_num: {u_num + 1}, i_num: {i_num + 1}')
     return train_records, val_records, test_records, unlearn_records, params
 
 
@@ -333,14 +339,14 @@ def train_mf_model(model, train_records, acc_val_records, ul_val_records, sys_pa
     total_epoch, best_epoch, best_res = 2000, 0, 0.005
     unlearn = sys_params.unlearn
     device = params['device']
-    for epoch in range(total_epoch):
+    for epoch in tqdm(range(total_epoch), desc="Training MF model"):
         model.train()
         tim1 = time.time()
         total_loss = 0
         runs = 0
         users, posItems, negItems = demo_sample(params['num_items'], train_records)
         users, posItems, negItems = shuffle(users, posItems, negItems)
-        for user, pos, neg in minibatch(users, posItems, negItems, batch_size=sys_params.bs):
+        for user, pos, neg in tqdm(minibatch(users, posItems, negItems, batch_size=sys_params.bs), desc="Training MF model"):
             optimizer.zero_grad()
             u, i, n = user.to(device), pos.to(device), neg.to(device)
             # forward pass
@@ -359,13 +365,13 @@ def train_mf_model(model, train_records, acc_val_records, ul_val_records, sys_pa
             best_epoch = epoch
             if not os.path.exists(f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}'):
                 os.makedirs(f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}')
-                print('Made new dir!')
+                logging.info('Made new dir!')
             torch.save(model.state_dict(),
                        f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}/{sys_params.base}-{sys_params.ul_perc}.pt')
         if epoch - best_epoch > 60:
             break
 
-        print(
+        logging.info(
             'Epoch [{}/{}], Loss: {:.4f}, UL AUC: {:.4f}, ACC AUC: {:.4f}, '
             'ACC NDCG@20: {:.4f}, Time: {:.2f}s'.format(
                 epoch + 1, total_epoch,
@@ -374,7 +380,7 @@ def train_mf_model(model, train_records, acc_val_records, ul_val_records, sys_pa
                 auc_acc,
                 ndcg_acc,
                 time.time() - tim1))
-    print(f'Best NDCG@20: {best_res:.4f}, Best epoch: {best_epoch}, total time: {time.time() - start_time:.3f}s')
+    logging.info(f'Best NDCG@20: {best_res:.4f}, Best epoch: {best_epoch}, total time: {time.time() - start_time:.3f}s')
 
 
 def train_miattacker_model(model, train_records, test_records, ul_val_records, sys_params, params):
@@ -395,7 +401,7 @@ def train_miattacker_model(model, train_records, test_records, ul_val_records, s
         model.train()
         total_loss = 0
         runs = 0
-        for user, pos, neg in minibatch(users, pos_items, neg_items, batch_size=sys_params.bs):
+        for user, pos, neg in tqdm(minibatch(users, pos_items, neg_items, batch_size=sys_params.bs), desc="Training MIAttacker model"):
             optimizer.zero_grad()
             user, pos, neg = torch.LongTensor(user), torch.LongTensor(pos), torch.LongTensor(neg)
             u, i, n = user.to(device), pos.to(device), neg.to(device)
@@ -413,13 +419,13 @@ def train_miattacker_model(model, train_records, test_records, ul_val_records, s
             best_epoch = epoch
             if not os.path.exists(f'checkpoints/{sys_params.dataset}/MIAttacker/'):
                 os.makedirs(f'checkpoints/{sys_params.dataset}/MIAttacker/')
-                print('Made new dir!')
+                logging.info('Made new dir!')
             torch.save(model.state_dict(),
                        f'checkpoints/{sys_params.dataset}/MIAttacker/{sys_params.base}-{sys_params.ul_perc}.pt')
         if epoch - best_epoch > 60:
             break
-        print(f'Current best auc: {best_res:.4f}')
-    print(f'Best AUC: {best_res:.4f}, Best epoch: {best_epoch}, total time: {time.time() - start_time:.3f}s')
+        logging.info(f'Current best auc: {best_res:.4f}')
+    logging.info(f'Best AUC: {best_res:.4f}, Best epoch: {best_epoch}, total time: {time.time() - start_time:.3f}s')
 
 
 def train_lg_model(model, graph, train_records, acc_val_records, ul_val_records, sys_params, params):
@@ -433,7 +439,7 @@ def train_lg_model(model, graph, train_records, acc_val_records, ul_val_records,
         tim1, total_loss, runs = time.time(), 0, 0
         users, posItems, negItems = demo_sample(params['num_items'], train_records)
         users, posItems, negItems = shuffle(users, posItems, negItems)
-        for user, pos, neg in minibatch(users, posItems, negItems, batch_size=sys_params.bs):
+        for user, pos, neg in tqdm(minibatch(users, posItems, negItems, batch_size=sys_params.bs), desc="Training LG model"):
             optimizer.zero_grad()
             u, i, n = user.to(device), pos.to(device), neg.to(device)
             # forward pass
@@ -453,13 +459,13 @@ def train_lg_model(model, graph, train_records, acc_val_records, ul_val_records,
             best_epoch = epoch
             if not os.path.exists(f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}'):
                 os.makedirs(f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}')
-                print('Made new dir!')
+                logging.info('Made new dir!')
             torch.save(model.state_dict(),
                        f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}/{sys_params.base}-{sys_params.ul_perc}.pt')
         if epoch - best_epoch > 60:
             break
 
-        print(
+        logging.info(
             'Epoch [{}/{}], Loss: {:.4f}, UL AUC: {:.4f}, ACC AUC: {:.4f}, '
             'ACC NDCG@20: {:.4f}, Time: {:.2f}s'.format(
                 epoch + 1, total_epoch,
@@ -468,7 +474,7 @@ def train_lg_model(model, graph, train_records, acc_val_records, ul_val_records,
                 auc_acc,
                 ndcg_acc,
                 time.time() - tim1))
-    print(f'Best NDCG@20: {best_res:.4f}, Best epoch: {best_epoch}, total time: {time.time() - start_time:.3f}s')
+    logging.info(f'Best NDCG@20: {best_res:.4f}, Best epoch: {best_epoch}, total time: {time.time() - start_time:.3f}s')
 
 
 def poison_training_data(train_records, sys_params, params):
@@ -520,14 +526,14 @@ def conduct_recul_unlearn(model, graph, train_records, acc_val_records, ul_val_r
             phantom_records[int(model.phantom_mapping[user]) + params['num_users']].extend(unlearn_records[user])
         if graph:
             phantom_graph = create_train_graph(phantom_records, phantom_params).to(params['device'])
-    print(f"[RECUL] PREPROCESS FINISHED. CURRENT TIME: {(time.time() - start_time) / 60:.2f}min.")
+    logging.info(f"[RECUL] PREPROCESS FINISHED. CURRENT TIME: {(time.time() - start_time) / 60:.2f}min.")
     for epoch in range(total_epoch):
         model.train()
         total_loss = 0
         runs = 0
         users, ulItems, tr_items, negItems = demo_unlearn_sample(params['num_items'], unlearn_records, train_records)
         users, ulItems, tr_items, negItems = shuffle(users, ulItems, tr_items, negItems)
-        for user, ul, tr, neg in minibatch(users, ulItems, tr_items, negItems, batch_size=sys_params.bs):
+        for user, ul, tr, neg in tqdm(minibatch(users, ulItems, tr_items, negItems, batch_size=sys_params.bs), desc="Training RecUL model"):
             optimizer.zero_grad()
             u, i, t, n = user.to(device), ul.to(device), tr.to(device), neg.to(device)
             # forward pass
@@ -567,7 +573,7 @@ def conduct_recul_unlearn(model, graph, train_records, acc_val_records, ul_val_r
         #         best_epoch = epoch
         #         if not os.path.exists(f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}'):
         #             os.makedirs(f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}')
-        #             print('Made new dir!')
+        #             logging.info('Made new dir!')
         #         torch.save(model.state_dict(),
         #                    f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}/{sys_params.base}-{sys_params.ul_perc}.pt')
         # else:
@@ -576,13 +582,13 @@ def conduct_recul_unlearn(model, graph, train_records, acc_val_records, ul_val_r
             best_epoch = epoch
             if not os.path.exists(f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}'):
                 os.makedirs(f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}')
-                print('Made new dir!')
+                logging.info('Made new dir!')
             torch.save(model.state_dict(),
                        f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}/{sys_params.base}-{sys_params.ul_perc}.pt')
         if epoch - best_epoch > 10:
             break
 
-        print(
+        logging.info(
             '[RecUL] Epoch [{}/{}], Loss: {:.4f}, UL AUC: {:.4f}, ACC AUC: {:.4f}, '
             'ACC NDCG@20: {:.4f}, Current time: {:.2f}min'.format(
                 epoch + 1, total_epoch,
@@ -591,8 +597,7 @@ def conduct_recul_unlearn(model, graph, train_records, acc_val_records, ul_val_r
                 auc_acc,
                 ndcg_acc,
                 (time.time() - start_time) / 60))
-    print(
-        f'Best UL AUC: {best_res:.4f}, Best epoch: {best_epoch}, total time: {(time.time() - start_time) / 60:.2f}min')
+    logging.info(f'Best UL AUC: {best_res:.4f}, Best epoch: {best_epoch}, total time: {(time.time() - start_time) / 60:.2f}min')
 
 
 def conduct_ifru_unlearn(model, graph, train_records, acc_val_records, ul_val_records, unlearn_records, sys_params,
@@ -602,7 +607,7 @@ def conduct_ifru_unlearn(model, graph, train_records, acc_val_records, ul_val_re
     total_epoch, best_epoch, best_res, best_ndcg = 2000, 0, 0.005, 0
     unlearn = sys_params.unlearn
     ifru_model = IFRU(params, sys_params)
-    print(f"[IFRU] PREPROCESS FINISHED. CURRENT TIME: {(time.time() - start_time) / 60:.2f}min.")
+    logging.info(f"[IFRU] PREPROCESS FINISHED. CURRENT TIME: {(time.time() - start_time) / 60:.2f}min.")
 
     tr_users, tr_posItems, tr_negItems = demo_sample(params['num_items'], train_records)
     tr_users, tr_posItems, tr_negItems = tr_users.to(device), tr_posItems.to(device), tr_negItems.to(device)
@@ -627,13 +632,13 @@ def conduct_ifru_unlearn(model, graph, train_records, acc_val_records, ul_val_re
             best_epoch = epoch
             if not os.path.exists(f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}'):
                 os.makedirs(f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}')
-                print('Made new dir!')
+                logging.info('Made new dir!')
             torch.save(model.state_dict(),
                        f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}/{sys_params.base}-{sys_params.ul_perc}.pt')
         if epoch - best_epoch > 50:
             break
 
-        print(
+        logging.info(
             '[IFRU] Epoch [{}/{}], UL AUC: {:.4f}, ACC AUC: {:.4f}, '
             'ACC NDCG@20: {:.4f}, Current time: {:.2f}min'.format(
                 epoch + 1, total_epoch,
@@ -641,8 +646,7 @@ def conduct_ifru_unlearn(model, graph, train_records, acc_val_records, ul_val_re
                 auc_acc,
                 ndcg_acc,
                 (time.time() - start_time) / 60))
-    print(
-        f'Best UL AUC: {best_res:.4f}, Best epoch: {best_epoch}, total time: {(time.time() - start_time) / 60:.2f}min')
+    logging.info(f'Best UL AUC: {best_res:.4f}, Best epoch: {best_epoch}, total time: {(time.time() - start_time) / 60:.2f}min')
 
 
 def minibatch(*tensors, batch_size):
@@ -750,5 +754,5 @@ def test_model_sim_vs_gt(gt_model, model, train_records, gt_graph=None, graph=No
                     results[topk].append(
                         len(np.intersect1d(x0[:topk], x1[:topk])) / len(np.union1d(x0[:topk], x1[:topk])))
         for i, topk in enumerate(TOP_Ks):
-            print(f'Jar_Sim@{topk}: {sum(results[topk]) / len(results[topk]):.4f}; ', end=" ")
-        print()
+            logging.info(f'Jar_Sim@{topk}: {sum(results[topk]) / len(results[topk]):.4f}; ')
+        logging.info('')

@@ -1,4 +1,5 @@
 import pdb
+import logging  # Add this import
 
 import torch
 import torch.nn as nn
@@ -17,10 +18,10 @@ def _L2_loss_mean(x):
 def assign_phantom(u_emb, n_ph):
     if n_ph == u_emb.shape[0]:
         return np.arange(n_ph)
-    print('Start phantom user assignment k-means!')
+    logging.info('Start phantom user assignment k-means!')  # Changed from print to logging.info
     # labels = KMeans(n_clusters=n_ph, n_init=10).fit(u_emb.detach().cpu().numpy()).labels_
     labels = np.random.randint(low=0, high=n_ph, size=u_emb.shape[0])
-    print('Finish phantom user assignment k-means!')
+    logging.info('Finish phantom user assignment k-means!')  # Changed from print to logging.info
     return labels
 
 
