@@ -3,6 +3,7 @@ import copy
 import os
 import pdb
 import time
+import logging
 
 import numpy
 import torch
@@ -57,13 +58,13 @@ def conduct_laser(model: LASER, graphs, train_records, unlearn_record, acc_val_r
                   sys_params, params, start_time):
     n_cluster = sys_params.n_cluster
     shards = detect_groups(model, unlearn_record)
-    print(f"[LASER] INFLUENCED GROUPS: {shards}, current time: {(time.time() - start_time) / 60:.2f}min.")
-    print(f"[LASER] START training {n_cluster} SEQ_MODELS, current time: {(time.time() - start_time) / 60:.2f}min.")
+    logging.info(f"[LASER] INFLUENCED GROUPS: {shards}, current time: {(time.time() - start_time) / 60:.2f}min.")
+    logging.info(f"[LASER] START training {n_cluster} SEQ_MODELS, current time: {(time.time() - start_time) / 60:.2f}min.")
     for idx in range(n_cluster):
-        print(f"[LASER] START training seq_model {idx}, current time: {(time.time() - start_time) / 60:.2f}min.")
+        logging.info(f"[LASER] START training seq_model {idx}, current time: {(time.time() - start_time) / 60:.2f}min.")
         train_seq_model(model, idx, tr_rds[idx], acc_val_records, ul_val_records, sys_params, params, graphs)
-    print(f"[LASER] FINISH training SEQ_MODELS, current time: {(time.time() - start_time) / 60:.2f}min.")
-    print(f"TOTAL RUNNING TIME: {(time.time() - start_time) / 60:.2f}min")
+    logging.info(f"[LASER] FINISH training SEQ_MODELS, current time: {(time.time() - start_time) / 60:.2f}min.")
+    logging.info(f"TOTAL RUNNING TIME: {(time.time() - start_time) / 60:.2f}min")
 
 
 def detect_groups(model, unlearning_record):
@@ -74,7 +75,7 @@ def detect_groups(model, unlearning_record):
 
 
 def divide_groups(train_records, user_embed, n_cluster):
-    print('Start grouping!')
+    logging.info('Start grouping!')
     u_embed = user_embed.detach().cpu().numpy()
     labels = KMeans(n_clusters=n_cluster, n_init=10).fit(u_embed).labels_
     embeds = [[] for _ in range(n_cluster)]
@@ -87,7 +88,7 @@ def divide_groups(train_records, user_embed, n_cluster):
         label_order_dict[label] = i
     for i in range(len(labels)):
         labels[i] = label_order_dict[labels[i]]
-    print('Finish grouping!')
+    logging.info('Finish grouping!')
     tr_rds = [collections.defaultdict(list) for _ in range(n_cluster)]
     store_dict = dict()
     for u in range(user_embed.shape[0]):
@@ -137,13 +138,13 @@ def train_seq_model(recModel, index, train_records, acc_val_records, ul_val_reco
             if index == len(recModel.models) - 1:
                 if not os.path.exists(f'checkpoints/{sys_params.dataset}/{sys_params.unlearn}/{sys_params.tst_mth}'):
                     os.makedirs(f'checkpoints/{sys_params.dataset}/{sys_params.unlearn}/{sys_params.tst_mth}')
-                    print('Made new dir!')
+                    logging.info('Made new dir!')
                 torch.save(recModel.state_dict(),
                            f'checkpoints/{sys_params.dataset}/{sys_params.unlearn}/{sys_params.tst_mth}/{sys_params.base}-{sys_params.ul_perc}.pt')
         if epoch - best_epoch > 50:
             break
 
-        print(
+        logging.info(
             'LASER Seq-model {}, Epoch [{}/{}], Runs: {}, Loss: {:.4f}, '
             'UL AUC: {:.4f}, ACC AUC: {:.4f}, ACC NDCG@20: {:.4f},'
             ' Seq_model training time: {:.2f}min'.format(

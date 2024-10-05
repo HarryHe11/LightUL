@@ -243,7 +243,7 @@ def test_model_ndcg(model, train_records, test_records, graph=None, verbose=Fals
                 results['ndcg'][topk].extend(result['ndcg'][idx])
         if verbose:
             for i, topk in enumerate(TOP_Ks):
-                print(f'Precision@{topk}: {sum(results["precision"][topk]) / len(results["precision"][topk]):.4f}; '
+                logging.info(f'Precision@{topk}: {sum(results["precision"][topk]) / len(results["precision"][topk]):.4f}; '
                       f'Recall@{topk}: {sum(results["recall"][topk]) / len(results["recall"][topk]):.4f};  '
                       f'NDCG@{topk}: {sum(results["ndcg"][topk]) / len(results["ndcg"][topk]):.4f};  ')
 
@@ -369,6 +369,7 @@ def train_mf_model(model, train_records, acc_val_records, ul_val_records, sys_pa
             torch.save(model.state_dict(),
                        f'checkpoints/{sys_params.dataset}/{unlearn}/{sys_params.tst_mth}/{sys_params.base}-{sys_params.ul_perc}.pt')
         if epoch - best_epoch > 60:
+            logging.info(f'Early stopping at epoch {epoch}')
             break
 
         logging.info(

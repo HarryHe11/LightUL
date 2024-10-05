@@ -2,6 +2,7 @@ import collections
 import os
 import pdb
 import time
+import logging
 
 import torch
 import torch.nn as nn
@@ -81,16 +82,16 @@ def conduct_receraser(model: RecEraser, graphs, train_records, unlearn_record, a
                       sys_params, params, start_time):
     n_cluster = sys_params.n_cluster
     shards = detect_shards(model, unlearn_record)
-    print(f"[RecEraser] INFLUENCED SHARDS: {shards}, current time: {(time.time() - start_time) / 60:.2f}min.")
-    print(f"[RecEraser] START training {n_cluster} SUB_MODELS, current time: {(time.time() - start_time) / 60:.2f}min.")
+    logging.info(f"[RecEraser] INFLUENCED SHARDS: {shards}, current time: {(time.time() - start_time) / 60:.2f}min.")
+    logging.info(f"[RecEraser] START training {n_cluster} SUB_MODELS, current time: {(time.time() - start_time) / 60:.2f}min.")
     for idx in range(n_cluster):
-        print(f"[RecEraser] START training sub-model {idx}, current time: {(time.time() - start_time) / 60:.2f}min.")
+        logging.info(f"[RecEraser] START training sub-model {idx}, current time: {(time.time() - start_time) / 60:.2f}min.")
         train_submodel(model, idx, tr_rds[idx], acc_val_records, ul_val_records, sys_params, params, graphs)
-    print(f"[RecEraser] FINISH training SUB_MODELS, current time: {(time.time() - start_time) / 60:.2f}min.")
-    print(f"[RecEraser] START training ATTENTION layer, current time: {(time.time() - start_time) / 60:.2f}min.")
+    logging.info(f"[RecEraser] FINISH training SUB_MODELS, current time: {(time.time() - start_time) / 60:.2f}min.")
+    logging.info(f"[RecEraser] START training ATTENTION layer, current time: {(time.time() - start_time) / 60:.2f}min.")
     train_att_layer(model, train_records, acc_val_records, ul_val_records, sys_params, params, graphs)
-    print(f"[RecEraser] FINISH training ATTENTION layer, current time: {(time.time() - start_time) / 60:.2f}min.")
-    print(f"TOTAL RUNNING TIME: {(time.time() - start_time) / 60:.2f}min")
+    logging.info(f"[RecEraser] FINISH training ATTENTION layer, current time: {(time.time() - start_time) / 60:.2f}min.")
+    logging.info(f"TOTAL RUNNING TIME: {(time.time() - start_time) / 60:.2f}min")
 
 
 def detect_shards(model, unlearning_record):
@@ -101,10 +102,9 @@ def detect_shards(model, unlearning_record):
 
 
 def divide_shards(train_records, user_embed, n_cluster):
-    # Use user-based k-means (Interaction-based will cost enormous time and memory consumptions due to large quantity.)
-    print('Start calculating k-means!')
+    logging.info('Start calculating k-means!')
     labels = KMeans(n_clusters=n_cluster, n_init=10).fit(user_embed.detach().cpu().numpy()).labels_
-    print('Finish calculating k-means!')
+    logging.info('Finish calculating k-means!')
     tr_rds = [collections.defaultdict(list) for _ in range(n_cluster)]
     store_dict = dict()
     for u in range(user_embed.shape[0]):
@@ -152,7 +152,7 @@ def train_submodel(recModel, index, train_records, acc_val_records, ul_val_recor
         if epoch - best_epoch > 50:
             break
 
-        print(
+        logging.info(
             'RecEraser Sub-model {}, Epoch [{}/{}], Runs: {}, Loss: {:.4f}, '
             'UL AUC: {:.4f}, ACC AUC: {:.4f}, ACC NDCG@20: {:.4f},'
             ' Sub_model training time: {:.2f}min'.format(
@@ -197,12 +197,12 @@ def train_att_layer(recModel, train_records, acc_val_records, ul_val_records, sy
             best_epoch = epoch
             if not os.path.exists(f'checkpoints/{sys_params.dataset}/{sys_params.unlearn}/{sys_params.tst_mth}'):
                 os.makedirs(f'checkpoints/{sys_params.dataset}/{sys_params.unlearn}/{sys_params.tst_mth}')
-                print('Made new dir!')
+                logging.info('Made new dir!')
             torch.save(recModel.state_dict(),
                        f'checkpoints/{sys_params.dataset}/{sys_params.unlearn}/{sys_params.tst_mth}/{sys_params.base}-{sys_params.ul_perc}.pt')
         if epoch - best_epoch > 25:
             break
-        print(
+        logging.info(
             'RecEraser Attention Layer Training. Epoch [{}/{}], Runs: {} Loss: {:.4f}, '
             'UL AUC: {:.4f}, ACC AUC: {:.4f}, ACC NDCG@20: {:.4f}, '
             'Attention layer training time: {:.2f}min'.format(

@@ -1,7 +1,7 @@
 import collections
 import os.path
 import random
-
+import logging
 
 def crt_ml_data():
     train_records = collections.defaultdict(list)
@@ -130,7 +130,7 @@ def crt_ul_test(dataset, percentage=0.01):
                 file.write(f'{user}\t{item}\t1\n')
         file.close()
 
-        print(f'{dataset}_{sw}_{percentage} done! #unlearn: {cnt}, #remain: {tst_cnt}')
+        logging.info(f'{dataset}_{sw}_{percentage} done! #unlearn: {cnt}, #remain: {tst_cnt}')
 
 
 def crt_ori_test(dataset):
@@ -174,7 +174,7 @@ def crt_ori_test(dataset):
     for s_u, s_i in smp_records:
         file.write(f'{s_u}\t{s_i}\t0\n')
     file.close()
-    print(f'{dataset} done!')
+    logging.info(f'{dataset} done!')
 
 
 if __name__ == '__main__':
