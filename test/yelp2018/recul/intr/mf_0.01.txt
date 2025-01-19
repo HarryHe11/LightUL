@@ -1,0 +1,26 @@
+Read yelp2018 dataset done! u_num: 31668, i_num: 38048
+Load a pre-trained model
+ UL AUC before unlearning: 0.5051
+ACC AUC before unlearning: 0.8838
+NDCG@20 before unlearning: 0.0277
+[RECUL] START TRAINING. CURRENT TIME: 0.01min.
+[RECUL] PREPROCESS FINISHED. CURRENT TIME: 0.01min.
+Made new dir!
+[RecUL] Epoch [1/2000], Loss: 2.2199, UL AUC: 0.8385, ACC AUC: 0.7957, ACC NDCG@20: 0.0277, Current time: 0.08min
+[RecUL] Epoch [2/2000], Loss: 1.9518, UL AUC: 0.8322, ACC AUC: 0.8023, ACC NDCG@20: 0.0279, Current time: 0.14min
+[RecUL] Epoch [3/2000], Loss: 1.9080, UL AUC: 0.8137, ACC AUC: 0.8069, ACC NDCG@20: 0.0278, Current time: 0.20min
+[RecUL] Epoch [4/2000], Loss: 1.8802, UL AUC: 0.8254, ACC AUC: 0.7887, ACC NDCG@20: 0.0277, Current time: 0.26min
+[RecUL] Epoch [5/2000], Loss: 1.8633, UL AUC: 0.8206, ACC AUC: 0.7943, ACC NDCG@20: 0.0277, Current time: 0.32min
+[RecUL] Epoch [6/2000], Loss: 1.8370, UL AUC: 0.7688, ACC AUC: 0.8148, ACC NDCG@20: 0.0276, Current time: 0.38min
+[RecUL] Epoch [7/2000], Loss: 1.8262, UL AUC: 0.7932, ACC AUC: 0.8114, ACC NDCG@20: 0.0275, Current time: 0.44min
+[RecUL] Epoch [8/2000], Loss: 1.8347, UL AUC: 0.8167, ACC AUC: 0.7905, ACC NDCG@20: 0.0274, Current time: 0.50min
+[RecUL] Epoch [9/2000], Loss: 1.8128, UL AUC: 0.7951, ACC AUC: 0.7924, ACC NDCG@20: 0.0275, Current time: 0.56min
+[RecUL] Epoch [10/2000], Loss: 1.7937, UL AUC: 0.8027, ACC AUC: 0.7878, ACC NDCG@20: 0.0275, Current time: 0.62min
+[RecUL] Epoch [11/2000], Loss: 1.7859, UL AUC: 0.7918, ACC AUC: 0.7917, ACC NDCG@20: 0.0274, Current time: 0.68min
+Best UL AUC: 0.8385, Best epoch: 0, total time: 0.74min
+[RECUL] TRAINING FINISHED. TOTAL TIME: 0.75min.
+Precision@20: 0.0162; Recall@20: 0.0357;  NDCG@20: 0.0278;  
+Precision@50: 0.0144; Recall@50: 0.0787;  NDCG@50: 0.0439;  
+Precision@100: 0.0126; Recall@100: 0.1363;  NDCG@100: 0.0627;  
+Before unlearning: ACC AUC: 0.8838, UL AUC: 0.5051, ACC NDCG@20: 0.0277
+After unlearning: ACC AUC: 0.7957, UL AUC: 0.8385, ACC NDCG@20: 0.0278

@@ -1,7 +1,6 @@
 import argparse
 import os.path
 
-import dgl
 
 from baseline.LASER import LASER, divide_groups, conduct_laser
 from baseline.RecEraser import RecEraser, conduct_receraser, divide_shards
@@ -120,7 +119,7 @@ def run_model(train_records, val_records, test_records, unlearn_records, sys_par
                 f'checkpoints/{sys_paras.dataset}/{sys_paras.unlearn}/{sys_paras.tst_mth}/{sys_paras.base}-{sys_paras.ul_perc}.pt'),
             strict=False)
     else:
-        print(f'ERROR: No unlearned model!')
+        print(f'ERROR: No unlearned model at {sys_paras.dataset}/{sys_paras.unlearn}/{sys_paras.tst_mth}/{sys_paras.base}-{sys_paras.ul_perc}.pt!')
 
     ul_auc = test_model_auc(model, test_records, graph)
     acc_auc = test_model_auc(model, val_records, graph)

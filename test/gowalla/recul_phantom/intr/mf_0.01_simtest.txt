@@ -1,0 +1,7 @@
+Read gowalla dataset done! u_num: 29858, i_num: 40981
+Load a pre-trained model
+ UL AUC before unlearning: 0.5004
+ACC AUC before unlearning: 0.8984
+NDCG@20 before unlearning: 0.0856
+Start phantom user assignment k-means!
+Finish phantom user assignment k-means!

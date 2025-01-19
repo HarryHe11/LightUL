@@ -1,0 +1,14 @@
+Read ml-1M dataset done! u_num: 6040, i_num: 3883
+Load a pre-trained model
+UL AUC before unlearning: 0.4898
+ACC AUC before unlearning: 0.9108
+NDCG@20 before unlearning: 0.2855
+Start grouping!
+Finish grouping!
+Precision@20: 0.1332; Recall@20: 0.0888;  NDCG@20: 0.1389;  
+Precision@50: 0.1093; Recall@50: 0.1823;  NDCG@50: 0.1668;  
+Precision@100: 0.0890; Recall@100: 0.2968;  NDCG@100: 0.2274;  
+Before unlearning: ACC AUC: 0.9108, UL AUC: 0.4898, ACC NDCG@20: 0.2855
+After unlearning: ACC AUC: 0.8389, UL AUC: 0.5714, ACC NDCG@20: 0.1389
+Load a re-train model
+Jar_Sim@20: 0.1161;  Jar_Sim@50: 0.1720;  Jar_Sim@100: 0.2282;  

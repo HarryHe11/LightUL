@@ -1,0 +1,2 @@
+Read yelp2018 dataset done! u_num: 31668, i_num: 38048
+Load a pre-trained model

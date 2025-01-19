@@ -429,10 +429,12 @@ def train_lg_model(model, graph, train_records, acc_val_records, ul_val_records,
     unlearn = sys_params.unlearn
     device = params['device']
     for epoch in range(total_epoch):
+        
         model.train()
         tim1, total_loss, runs = time.time(), 0, 0
         users, posItems, negItems = demo_sample(params['num_items'], train_records)
         users, posItems, negItems = shuffle(users, posItems, negItems)
+        torch.cuda.empty_cache()
         for user, pos, neg in minibatch(users, posItems, negItems, batch_size=sys_params.bs):
             optimizer.zero_grad()
             u, i, n = user.to(device), pos.to(device), neg.to(device)

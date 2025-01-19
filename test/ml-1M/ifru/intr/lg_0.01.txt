@@ -1,0 +1,75 @@
+Read ml-1M dataset done! u_num: 6040, i_num: 3883
+Load a pre-trained model
+UL AUC before unlearning: 0.4898
+ACC AUC before unlearning: 0.9108
+NDCG@20 before unlearning: 0.2855
+[IFRU] START TRAINING. CURRENT TIME: 0.01min.
+[IFRU] PREPROCESS FINISHED. CURRENT TIME: 0.00min.
+[IFRU] Epoch [1/2000], UL AUC: 0.5324, ACC AUC: 0.9086, ACC NDCG@20: 0.2625, Current time: 0.21min
+[IFRU] Epoch [2/2000], UL AUC: 0.5495, ACC AUC: 0.9031, ACC NDCG@20: 0.2161, Current time: 0.29min
+[IFRU] Epoch [3/2000], UL AUC: 0.5591, ACC AUC: 0.8953, ACC NDCG@20: 0.1792, Current time: 0.38min
+[IFRU] Epoch [4/2000], UL AUC: 0.5656, ACC AUC: 0.8860, ACC NDCG@20: 0.1538, Current time: 0.47min
+[IFRU] Epoch [5/2000], UL AUC: 0.5703, ACC AUC: 0.8757, ACC NDCG@20: 0.1368, Current time: 0.56min
+[IFRU] Epoch [6/2000], UL AUC: 0.5741, ACC AUC: 0.8649, ACC NDCG@20: 0.1239, Current time: 0.65min
+[IFRU] Epoch [7/2000], UL AUC: 0.5772, ACC AUC: 0.8542, ACC NDCG@20: 0.1146, Current time: 0.73min
+[IFRU] Epoch [8/2000], UL AUC: 0.5798, ACC AUC: 0.8437, ACC NDCG@20: 0.1071, Current time: 0.82min
+[IFRU] Epoch [9/2000], UL AUC: 0.5819, ACC AUC: 0.8338, ACC NDCG@20: 0.1013, Current time: 0.90min
+[IFRU] Epoch [10/2000], UL AUC: 0.5838, ACC AUC: 0.8243, ACC NDCG@20: 0.0977, Current time: 0.99min
+[IFRU] Epoch [11/2000], UL AUC: 0.5855, ACC AUC: 0.8154, ACC NDCG@20: 0.0931, Current time: 1.07min
+[IFRU] Epoch [12/2000], UL AUC: 0.5866, ACC AUC: 0.8071, ACC NDCG@20: 0.0890, Current time: 1.16min
+[IFRU] Epoch [13/2000], UL AUC: 0.5877, ACC AUC: 0.7992, ACC NDCG@20: 0.0849, Current time: 1.24min
+[IFRU] Epoch [14/2000], UL AUC: 0.5886, ACC AUC: 0.7919, ACC NDCG@20: 0.0811, Current time: 1.32min
+[IFRU] Epoch [15/2000], UL AUC: 0.5894, ACC AUC: 0.7850, ACC NDCG@20: 0.0779, Current time: 1.41min
+[IFRU] Epoch [16/2000], UL AUC: 0.5898, ACC AUC: 0.7786, ACC NDCG@20: 0.0759, Current time: 1.49min
+[IFRU] Epoch [17/2000], UL AUC: 0.5900, ACC AUC: 0.7726, ACC NDCG@20: 0.0732, Current time: 1.58min
+[IFRU] Epoch [18/2000], UL AUC: 0.5901, ACC AUC: 0.7670, ACC NDCG@20: 0.0711, Current time: 1.67min
+[IFRU] Epoch [19/2000], UL AUC: 0.5899, ACC AUC: 0.7618, ACC NDCG@20: 0.0689, Current time: 1.75min
+[IFRU] Epoch [20/2000], UL AUC: 0.5898, ACC AUC: 0.7570, ACC NDCG@20: 0.0664, Current time: 1.83min
+[IFRU] Epoch [21/2000], UL AUC: 0.5898, ACC AUC: 0.7525, ACC NDCG@20: 0.0644, Current time: 1.92min
+[IFRU] Epoch [22/2000], UL AUC: 0.5896, ACC AUC: 0.7484, ACC NDCG@20: 0.0624, Current time: 2.00min
+[IFRU] Epoch [23/2000], UL AUC: 0.5893, ACC AUC: 0.7445, ACC NDCG@20: 0.0609, Current time: 2.09min
+[IFRU] Epoch [24/2000], UL AUC: 0.5892, ACC AUC: 0.7409, ACC NDCG@20: 0.0593, Current time: 2.18min
+[IFRU] Epoch [25/2000], UL AUC: 0.5891, ACC AUC: 0.7374, ACC NDCG@20: 0.0578, Current time: 2.26min
+[IFRU] Epoch [26/2000], UL AUC: 0.5888, ACC AUC: 0.7343, ACC NDCG@20: 0.0563, Current time: 2.35min
+[IFRU] Epoch [27/2000], UL AUC: 0.5886, ACC AUC: 0.7312, ACC NDCG@20: 0.0547, Current time: 2.43min
+[IFRU] Epoch [28/2000], UL AUC: 0.5871, ACC AUC: 0.7284, ACC NDCG@20: 0.0533, Current time: 2.52min
+[IFRU] Epoch [29/2000], UL AUC: 0.5866, ACC AUC: 0.7258, ACC NDCG@20: 0.0520, Current time: 2.60min
+[IFRU] Epoch [30/2000], UL AUC: 0.5856, ACC AUC: 0.7234, ACC NDCG@20: 0.0505, Current time: 2.69min
+[IFRU] Epoch [31/2000], UL AUC: 0.5853, ACC AUC: 0.7210, ACC NDCG@20: 0.0491, Current time: 2.77min
+[IFRU] Epoch [32/2000], UL AUC: 0.5847, ACC AUC: 0.7188, ACC NDCG@20: 0.0478, Current time: 2.86min
+[IFRU] Epoch [33/2000], UL AUC: 0.5845, ACC AUC: 0.7168, ACC NDCG@20: 0.0464, Current time: 2.94min
+[IFRU] Epoch [34/2000], UL AUC: 0.5846, ACC AUC: 0.7148, ACC NDCG@20: 0.0450, Current time: 3.02min
+[IFRU] Epoch [35/2000], UL AUC: 0.5848, ACC AUC: 0.7129, ACC NDCG@20: 0.0439, Current time: 3.11min
+[IFRU] Epoch [36/2000], UL AUC: 0.5842, ACC AUC: 0.7111, ACC NDCG@20: 0.0429, Current time: 3.19min
+[IFRU] Epoch [37/2000], UL AUC: 0.5837, ACC AUC: 0.7094, ACC NDCG@20: 0.0418, Current time: 3.28min
+[IFRU] Epoch [38/2000], UL AUC: 0.5828, ACC AUC: 0.7077, ACC NDCG@20: 0.0406, Current time: 3.36min
+[IFRU] Epoch [39/2000], UL AUC: 0.5829, ACC AUC: 0.7062, ACC NDCG@20: 0.0395, Current time: 3.45min
+[IFRU] Epoch [40/2000], UL AUC: 0.5820, ACC AUC: 0.7048, ACC NDCG@20: 0.0385, Current time: 3.53min
+[IFRU] Epoch [41/2000], UL AUC: 0.5812, ACC AUC: 0.7034, ACC NDCG@20: 0.0376, Current time: 3.62min
+[IFRU] Epoch [42/2000], UL AUC: 0.5799, ACC AUC: 0.7020, ACC NDCG@20: 0.0371, Current time: 3.70min
+[IFRU] Epoch [43/2000], UL AUC: 0.5803, ACC AUC: 0.7007, ACC NDCG@20: 0.0364, Current time: 3.79min
+[IFRU] Epoch [44/2000], UL AUC: 0.5804, ACC AUC: 0.6994, ACC NDCG@20: 0.0359, Current time: 3.87min
+[IFRU] Epoch [45/2000], UL AUC: 0.5798, ACC AUC: 0.6982, ACC NDCG@20: 0.0353, Current time: 3.96min
+[IFRU] Epoch [46/2000], UL AUC: 0.5791, ACC AUC: 0.6970, ACC NDCG@20: 0.0350, Current time: 4.04min
+[IFRU] Epoch [47/2000], UL AUC: 0.5786, ACC AUC: 0.6959, ACC NDCG@20: 0.0345, Current time: 4.13min
+[IFRU] Epoch [48/2000], UL AUC: 0.5779, ACC AUC: 0.6948, ACC NDCG@20: 0.0340, Current time: 4.21min
+[IFRU] Epoch [49/2000], UL AUC: 0.5772, ACC AUC: 0.6937, ACC NDCG@20: 0.0336, Current time: 4.29min
+[IFRU] Epoch [50/2000], UL AUC: 0.5750, ACC AUC: 0.6926, ACC NDCG@20: 0.0329, Current time: 4.38min
+[IFRU] Epoch [51/2000], UL AUC: 0.5744, ACC AUC: 0.6915, ACC NDCG@20: 0.0321, Current time: 4.46min
+[IFRU] Epoch [52/2000], UL AUC: 0.5737, ACC AUC: 0.6905, ACC NDCG@20: 0.0317, Current time: 4.55min
+[IFRU] Epoch [53/2000], UL AUC: 0.5737, ACC AUC: 0.6894, ACC NDCG@20: 0.0313, Current time: 4.63min
+[IFRU] Epoch [54/2000], UL AUC: 0.5714, ACC AUC: 0.6883, ACC NDCG@20: 0.0309, Current time: 4.72min
+[IFRU] Epoch [55/2000], UL AUC: 0.5708, ACC AUC: 0.6872, ACC NDCG@20: 0.0305, Current time: 4.80min
+[IFRU] Epoch [56/2000], UL AUC: 0.5708, ACC AUC: 0.6862, ACC NDCG@20: 0.0301, Current time: 4.88min
+[IFRU] Epoch [57/2000], UL AUC: 0.5703, ACC AUC: 0.6851, ACC NDCG@20: 0.0297, Current time: 4.97min
+[IFRU] Epoch [58/2000], UL AUC: 0.5694, ACC AUC: 0.6840, ACC NDCG@20: 0.0294, Current time: 5.06min
+[IFRU] Epoch [59/2000], UL AUC: 0.5690, ACC AUC: 0.6830, ACC NDCG@20: 0.0292, Current time: 5.14min
+[IFRU] Epoch [60/2000], UL AUC: 0.5686, ACC AUC: 0.6819, ACC NDCG@20: 0.0291, Current time: 5.22min
+[IFRU] Epoch [61/2000], UL AUC: 0.5688, ACC AUC: 0.6808, ACC NDCG@20: 0.0287, Current time: 5.31min
+Best UL AUC: 0.5855, Best epoch: 10, total time: 5.39min
+[IFRU] TRAINING FINISHED. TOTAL TIME: 5.40min.
+Precision@20: 0.0889; Recall@20: 0.0593;  NDCG@20: 0.0931;  
+Precision@50: 0.0736; Recall@50: 0.1228;  NDCG@50: 0.1122;  
+Precision@100: 0.0661; Recall@100: 0.2205;  NDCG@100: 0.1637;  
+Before unlearning: ACC AUC: 0.9108, UL AUC: 0.4898, ACC NDCG@20: 0.2855
+After unlearning: ACC AUC: 0.8154, UL AUC: 0.5855, ACC NDCG@20: 0.0931

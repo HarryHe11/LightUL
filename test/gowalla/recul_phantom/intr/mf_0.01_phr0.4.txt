@@ -1,0 +1,2 @@
+Read gowalla dataset done! u_num: 29858, i_num: 40981
+Load a pre-trained model

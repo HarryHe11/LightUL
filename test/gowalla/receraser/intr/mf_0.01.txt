@@ -1,0 +1,602 @@
+Read gowalla dataset done! u_num: 29858, i_num: 40981
+Load a pre-trained model
+ UL AUC before unlearning: 0.4954
+ACC AUC before unlearning: 0.8977
+NDCG@20 before unlearning: 0.0814
+[RecEraser] START TRAINING. CURRENT TIME: 0.00min.
+Start calculating k-means!
+Finish calculating k-means!
+[RecEraser] INFLUENCED SHARDS: {0, 1, 2}, current time: 0.03min.
+[RecEraser] START training 3 SUB_MODELS, current time: 0.03min.
+[RecEraser] START training sub-model 0, current time: 0.03min.
+RecEraser Sub-model 0, Epoch [1/2000], Runs: 283, Loss: 0.7521, UL AUC: 0.5087, ACC AUC: 0.5009, ACC NDCG@20: 0.0004, Sub_model training time: 0.06min
+RecEraser Sub-model 0, Epoch [2/2000], Runs: 283, Loss: 0.7039, UL AUC: 0.5146, ACC AUC: 0.5009, ACC NDCG@20: 0.0004, Sub_model training time: 0.10min
+RecEraser Sub-model 0, Epoch [3/2000], Runs: 283, Loss: 0.6756, UL AUC: 0.5178, ACC AUC: 0.5010, ACC NDCG@20: 0.0004, Sub_model training time: 0.14min
+RecEraser Sub-model 0, Epoch [4/2000], Runs: 283, Loss: 0.6598, UL AUC: 0.5203, ACC AUC: 0.5010, ACC NDCG@20: 0.0004, Sub_model training time: 0.18min
+RecEraser Sub-model 0, Epoch [5/2000], Runs: 283, Loss: 0.6507, UL AUC: 0.5228, ACC AUC: 0.5010, ACC NDCG@20: 0.0004, Sub_model training time: 0.22min
+RecEraser Sub-model 0, Epoch [6/2000], Runs: 283, Loss: 0.6422, UL AUC: 0.5249, ACC AUC: 0.5010, ACC NDCG@20: 0.0004, Sub_model training time: 0.27min
+RecEraser Sub-model 0, Epoch [7/2000], Runs: 283, Loss: 0.6345, UL AUC: 0.5265, ACC AUC: 0.5011, ACC NDCG@20: 0.0004, Sub_model training time: 0.31min
+RecEraser Sub-model 0, Epoch [8/2000], Runs: 283, Loss: 0.6291, UL AUC: 0.5285, ACC AUC: 0.5012, ACC NDCG@20: 0.0004, Sub_model training time: 0.35min
+RecEraser Sub-model 0, Epoch [9/2000], Runs: 283, Loss: 0.6229, UL AUC: 0.5299, ACC AUC: 0.5014, ACC NDCG@20: 0.0004, Sub_model training time: 0.39min
+RecEraser Sub-model 0, Epoch [10/2000], Runs: 283, Loss: 0.6186, UL AUC: 0.5308, ACC AUC: 0.5016, ACC NDCG@20: 0.0004, Sub_model training time: 0.43min
+RecEraser Sub-model 0, Epoch [11/2000], Runs: 283, Loss: 0.6161, UL AUC: 0.5317, ACC AUC: 0.5018, ACC NDCG@20: 0.0004, Sub_model training time: 0.47min
+RecEraser Sub-model 0, Epoch [12/2000], Runs: 283, Loss: 0.6112, UL AUC: 0.5327, ACC AUC: 0.5023, ACC NDCG@20: 0.0004, Sub_model training time: 0.51min
+RecEraser Sub-model 0, Epoch [13/2000], Runs: 283, Loss: 0.6070, UL AUC: 0.5336, ACC AUC: 0.5028, ACC NDCG@20: 0.0004, Sub_model training time: 0.55min
+RecEraser Sub-model 0, Epoch [14/2000], Runs: 283, Loss: 0.6027, UL AUC: 0.5342, ACC AUC: 0.5035, ACC NDCG@20: 0.0004, Sub_model training time: 0.60min
+RecEraser Sub-model 0, Epoch [15/2000], Runs: 283, Loss: 0.5991, UL AUC: 0.5346, ACC AUC: 0.5043, ACC NDCG@20: 0.0004, Sub_model training time: 0.64min
+RecEraser Sub-model 0, Epoch [16/2000], Runs: 283, Loss: 0.5941, UL AUC: 0.5354, ACC AUC: 0.5052, ACC NDCG@20: 0.0004, Sub_model training time: 0.68min
+RecEraser Sub-model 0, Epoch [17/2000], Runs: 283, Loss: 0.5879, UL AUC: 0.5362, ACC AUC: 0.5063, ACC NDCG@20: 0.0004, Sub_model training time: 0.72min
+RecEraser Sub-model 0, Epoch [18/2000], Runs: 283, Loss: 0.5822, UL AUC: 0.5364, ACC AUC: 0.5076, ACC NDCG@20: 0.0004, Sub_model training time: 0.76min
+RecEraser Sub-model 0, Epoch [19/2000], Runs: 283, Loss: 0.5766, UL AUC: 0.5362, ACC AUC: 0.5093, ACC NDCG@20: 0.0004, Sub_model training time: 0.80min
+RecEraser Sub-model 0, Epoch [20/2000], Runs: 283, Loss: 0.5687, UL AUC: 0.5365, ACC AUC: 0.5112, ACC NDCG@20: 0.0005, Sub_model training time: 0.85min
+RecEraser Sub-model 0, Epoch [21/2000], Runs: 283, Loss: 0.5608, UL AUC: 0.5364, ACC AUC: 0.5135, ACC NDCG@20: 0.0006, Sub_model training time: 0.89min
+RecEraser Sub-model 0, Epoch [22/2000], Runs: 283, Loss: 0.5519, UL AUC: 0.5363, ACC AUC: 0.5160, ACC NDCG@20: 0.0007, Sub_model training time: 0.93min
+RecEraser Sub-model 0, Epoch [23/2000], Runs: 283, Loss: 0.5429, UL AUC: 0.5369, ACC AUC: 0.5189, ACC NDCG@20: 0.0009, Sub_model training time: 0.97min
+RecEraser Sub-model 0, Epoch [24/2000], Runs: 283, Loss: 0.5319, UL AUC: 0.5369, ACC AUC: 0.5220, ACC NDCG@20: 0.0011, Sub_model training time: 1.01min
+RecEraser Sub-model 0, Epoch [25/2000], Runs: 283, Loss: 0.5203, UL AUC: 0.5365, ACC AUC: 0.5254, ACC NDCG@20: 0.0013, Sub_model training time: 1.05min
+RecEraser Sub-model 0, Epoch [26/2000], Runs: 283, Loss: 0.5081, UL AUC: 0.5360, ACC AUC: 0.5288, ACC NDCG@20: 0.0016, Sub_model training time: 1.09min
+RecEraser Sub-model 0, Epoch [27/2000], Runs: 283, Loss: 0.4961, UL AUC: 0.5362, ACC AUC: 0.5326, ACC NDCG@20: 0.0019, Sub_model training time: 1.13min
+RecEraser Sub-model 0, Epoch [28/2000], Runs: 283, Loss: 0.4828, UL AUC: 0.5365, ACC AUC: 0.5364, ACC NDCG@20: 0.0022, Sub_model training time: 1.17min
+RecEraser Sub-model 0, Epoch [29/2000], Runs: 283, Loss: 0.4698, UL AUC: 0.5365, ACC AUC: 0.5402, ACC NDCG@20: 0.0025, Sub_model training time: 1.21min
+RecEraser Sub-model 0, Epoch [30/2000], Runs: 283, Loss: 0.4584, UL AUC: 0.5360, ACC AUC: 0.5441, ACC NDCG@20: 0.0028, Sub_model training time: 1.26min
+RecEraser Sub-model 0, Epoch [31/2000], Runs: 283, Loss: 0.4481, UL AUC: 0.5368, ACC AUC: 0.5480, ACC NDCG@20: 0.0029, Sub_model training time: 1.30min
+RecEraser Sub-model 0, Epoch [32/2000], Runs: 283, Loss: 0.4379, UL AUC: 0.5368, ACC AUC: 0.5516, ACC NDCG@20: 0.0030, Sub_model training time: 1.35min
+RecEraser Sub-model 0, Epoch [33/2000], Runs: 283, Loss: 0.4291, UL AUC: 0.5366, ACC AUC: 0.5551, ACC NDCG@20: 0.0030, Sub_model training time: 1.39min
+RecEraser Sub-model 0, Epoch [34/2000], Runs: 283, Loss: 0.4200, UL AUC: 0.5370, ACC AUC: 0.5581, ACC NDCG@20: 0.0029, Sub_model training time: 1.43min
+RecEraser Sub-model 0, Epoch [35/2000], Runs: 283, Loss: 0.4131, UL AUC: 0.5375, ACC AUC: 0.5610, ACC NDCG@20: 0.0028, Sub_model training time: 1.47min
+RecEraser Sub-model 0, Epoch [36/2000], Runs: 283, Loss: 0.4079, UL AUC: 0.5382, ACC AUC: 0.5634, ACC NDCG@20: 0.0027, Sub_model training time: 1.51min
+RecEraser Sub-model 0, Epoch [37/2000], Runs: 283, Loss: 0.4025, UL AUC: 0.5386, ACC AUC: 0.5656, ACC NDCG@20: 0.0025, Sub_model training time: 1.55min
+RecEraser Sub-model 0, Epoch [38/2000], Runs: 283, Loss: 0.3984, UL AUC: 0.5389, ACC AUC: 0.5674, ACC NDCG@20: 0.0024, Sub_model training time: 1.60min
+RecEraser Sub-model 0, Epoch [39/2000], Runs: 283, Loss: 0.3958, UL AUC: 0.5395, ACC AUC: 0.5690, ACC NDCG@20: 0.0022, Sub_model training time: 1.64min
+RecEraser Sub-model 0, Epoch [40/2000], Runs: 283, Loss: 0.3915, UL AUC: 0.5401, ACC AUC: 0.5703, ACC NDCG@20: 0.0021, Sub_model training time: 1.68min
+RecEraser Sub-model 0, Epoch [41/2000], Runs: 283, Loss: 0.3894, UL AUC: 0.5407, ACC AUC: 0.5714, ACC NDCG@20: 0.0020, Sub_model training time: 1.72min
+RecEraser Sub-model 0, Epoch [42/2000], Runs: 283, Loss: 0.3865, UL AUC: 0.5413, ACC AUC: 0.5722, ACC NDCG@20: 0.0019, Sub_model training time: 1.76min
+RecEraser Sub-model 0, Epoch [43/2000], Runs: 283, Loss: 0.3846, UL AUC: 0.5417, ACC AUC: 0.5728, ACC NDCG@20: 0.0018, Sub_model training time: 1.80min
+RecEraser Sub-model 0, Epoch [44/2000], Runs: 283, Loss: 0.3831, UL AUC: 0.5427, ACC AUC: 0.5732, ACC NDCG@20: 0.0017, Sub_model training time: 1.84min
+RecEraser Sub-model 0, Epoch [45/2000], Runs: 283, Loss: 0.3815, UL AUC: 0.5433, ACC AUC: 0.5735, ACC NDCG@20: 0.0017, Sub_model training time: 1.88min
+RecEraser Sub-model 0, Epoch [46/2000], Runs: 283, Loss: 0.3804, UL AUC: 0.5439, ACC AUC: 0.5735, ACC NDCG@20: 0.0015, Sub_model training time: 1.92min
+RecEraser Sub-model 0, Epoch [47/2000], Runs: 283, Loss: 0.3790, UL AUC: 0.5447, ACC AUC: 0.5734, ACC NDCG@20: 0.0015, Sub_model training time: 1.96min
+RecEraser Sub-model 0, Epoch [48/2000], Runs: 283, Loss: 0.3778, UL AUC: 0.5455, ACC AUC: 0.5735, ACC NDCG@20: 0.0015, Sub_model training time: 2.01min
+RecEraser Sub-model 0, Epoch [49/2000], Runs: 283, Loss: 0.3768, UL AUC: 0.5464, ACC AUC: 0.5736, ACC NDCG@20: 0.0014, Sub_model training time: 2.05min
+RecEraser Sub-model 0, Epoch [50/2000], Runs: 283, Loss: 0.3762, UL AUC: 0.5471, ACC AUC: 0.5734, ACC NDCG@20: 0.0014, Sub_model training time: 2.09min
+RecEraser Sub-model 0, Epoch [51/2000], Runs: 283, Loss: 0.3747, UL AUC: 0.5478, ACC AUC: 0.5735, ACC NDCG@20: 0.0013, Sub_model training time: 2.13min
+[RecEraser] START training sub-model 1, current time: 2.19min.
+RecEraser Sub-model 1, Epoch [1/2000], Runs: 365, Loss: 0.7501, UL AUC: 0.5033, ACC AUC: 0.5003, ACC NDCG@20: 0.0003, Sub_model training time: 0.04min
+RecEraser Sub-model 1, Epoch [2/2000], Runs: 365, Loss: 0.7042, UL AUC: 0.5091, ACC AUC: 0.5003, ACC NDCG@20: 0.0003, Sub_model training time: 0.09min
+RecEraser Sub-model 1, Epoch [3/2000], Runs: 365, Loss: 0.6761, UL AUC: 0.5131, ACC AUC: 0.5004, ACC NDCG@20: 0.0003, Sub_model training time: 0.13min
+RecEraser Sub-model 1, Epoch [4/2000], Runs: 365, Loss: 0.6597, UL AUC: 0.5164, ACC AUC: 0.5006, ACC NDCG@20: 0.0003, Sub_model training time: 0.18min
+RecEraser Sub-model 1, Epoch [5/2000], Runs: 365, Loss: 0.6493, UL AUC: 0.5188, ACC AUC: 0.5009, ACC NDCG@20: 0.0003, Sub_model training time: 0.22min
+RecEraser Sub-model 1, Epoch [6/2000], Runs: 365, Loss: 0.6412, UL AUC: 0.5215, ACC AUC: 0.5011, ACC NDCG@20: 0.0003, Sub_model training time: 0.27min
+RecEraser Sub-model 1, Epoch [7/2000], Runs: 365, Loss: 0.6323, UL AUC: 0.5237, ACC AUC: 0.5015, ACC NDCG@20: 0.0003, Sub_model training time: 0.32min
+RecEraser Sub-model 1, Epoch [8/2000], Runs: 365, Loss: 0.6264, UL AUC: 0.5254, ACC AUC: 0.5020, ACC NDCG@20: 0.0003, Sub_model training time: 0.37min
+RecEraser Sub-model 1, Epoch [9/2000], Runs: 365, Loss: 0.6195, UL AUC: 0.5267, ACC AUC: 0.5026, ACC NDCG@20: 0.0003, Sub_model training time: 0.41min
+RecEraser Sub-model 1, Epoch [10/2000], Runs: 365, Loss: 0.6128, UL AUC: 0.5281, ACC AUC: 0.5036, ACC NDCG@20: 0.0003, Sub_model training time: 0.45min
+RecEraser Sub-model 1, Epoch [11/2000], Runs: 365, Loss: 0.6063, UL AUC: 0.5297, ACC AUC: 0.5048, ACC NDCG@20: 0.0003, Sub_model training time: 0.50min
+RecEraser Sub-model 1, Epoch [12/2000], Runs: 365, Loss: 0.5972, UL AUC: 0.5305, ACC AUC: 0.5063, ACC NDCG@20: 0.0003, Sub_model training time: 0.54min
+RecEraser Sub-model 1, Epoch [13/2000], Runs: 365, Loss: 0.5889, UL AUC: 0.5317, ACC AUC: 0.5083, ACC NDCG@20: 0.0003, Sub_model training time: 0.59min
+RecEraser Sub-model 1, Epoch [14/2000], Runs: 365, Loss: 0.5776, UL AUC: 0.5324, ACC AUC: 0.5109, ACC NDCG@20: 0.0004, Sub_model training time: 0.64min
+RecEraser Sub-model 1, Epoch [15/2000], Runs: 365, Loss: 0.5646, UL AUC: 0.5331, ACC AUC: 0.5139, ACC NDCG@20: 0.0005, Sub_model training time: 0.68min
+RecEraser Sub-model 1, Epoch [16/2000], Runs: 365, Loss: 0.5495, UL AUC: 0.5335, ACC AUC: 0.5173, ACC NDCG@20: 0.0008, Sub_model training time: 0.73min
+RecEraser Sub-model 1, Epoch [17/2000], Runs: 365, Loss: 0.5335, UL AUC: 0.5340, ACC AUC: 0.5208, ACC NDCG@20: 0.0011, Sub_model training time: 0.77min
+RecEraser Sub-model 1, Epoch [18/2000], Runs: 365, Loss: 0.5161, UL AUC: 0.5343, ACC AUC: 0.5245, ACC NDCG@20: 0.0014, Sub_model training time: 0.81min
+RecEraser Sub-model 1, Epoch [19/2000], Runs: 365, Loss: 0.4989, UL AUC: 0.5344, ACC AUC: 0.5281, ACC NDCG@20: 0.0017, Sub_model training time: 0.86min
+RecEraser Sub-model 1, Epoch [20/2000], Runs: 365, Loss: 0.4807, UL AUC: 0.5347, ACC AUC: 0.5317, ACC NDCG@20: 0.0019, Sub_model training time: 0.91min
+RecEraser Sub-model 1, Epoch [21/2000], Runs: 365, Loss: 0.4651, UL AUC: 0.5352, ACC AUC: 0.5350, ACC NDCG@20: 0.0021, Sub_model training time: 0.95min
+RecEraser Sub-model 1, Epoch [22/2000], Runs: 365, Loss: 0.4510, UL AUC: 0.5353, ACC AUC: 0.5379, ACC NDCG@20: 0.0022, Sub_model training time: 1.00min
+RecEraser Sub-model 1, Epoch [23/2000], Runs: 365, Loss: 0.4393, UL AUC: 0.5357, ACC AUC: 0.5408, ACC NDCG@20: 0.0022, Sub_model training time: 1.04min
+RecEraser Sub-model 1, Epoch [24/2000], Runs: 365, Loss: 0.4285, UL AUC: 0.5359, ACC AUC: 0.5434, ACC NDCG@20: 0.0022, Sub_model training time: 1.09min
+RecEraser Sub-model 1, Epoch [25/2000], Runs: 365, Loss: 0.4196, UL AUC: 0.5366, ACC AUC: 0.5455, ACC NDCG@20: 0.0022, Sub_model training time: 1.13min
+RecEraser Sub-model 1, Epoch [26/2000], Runs: 365, Loss: 0.4126, UL AUC: 0.5377, ACC AUC: 0.5472, ACC NDCG@20: 0.0022, Sub_model training time: 1.18min
+RecEraser Sub-model 1, Epoch [27/2000], Runs: 365, Loss: 0.4062, UL AUC: 0.5386, ACC AUC: 0.5487, ACC NDCG@20: 0.0020, Sub_model training time: 1.22min
+RecEraser Sub-model 1, Epoch [28/2000], Runs: 365, Loss: 0.4010, UL AUC: 0.5392, ACC AUC: 0.5499, ACC NDCG@20: 0.0020, Sub_model training time: 1.27min
+RecEraser Sub-model 1, Epoch [29/2000], Runs: 365, Loss: 0.3972, UL AUC: 0.5406, ACC AUC: 0.5505, ACC NDCG@20: 0.0020, Sub_model training time: 1.31min
+RecEraser Sub-model 1, Epoch [30/2000], Runs: 365, Loss: 0.3935, UL AUC: 0.5419, ACC AUC: 0.5515, ACC NDCG@20: 0.0019, Sub_model training time: 1.36min
+RecEraser Sub-model 1, Epoch [31/2000], Runs: 365, Loss: 0.3912, UL AUC: 0.5431, ACC AUC: 0.5519, ACC NDCG@20: 0.0018, Sub_model training time: 1.40min
+RecEraser Sub-model 1, Epoch [32/2000], Runs: 365, Loss: 0.3883, UL AUC: 0.5443, ACC AUC: 0.5519, ACC NDCG@20: 0.0018, Sub_model training time: 1.45min
+RecEraser Sub-model 1, Epoch [33/2000], Runs: 365, Loss: 0.3862, UL AUC: 0.5451, ACC AUC: 0.5520, ACC NDCG@20: 0.0016, Sub_model training time: 1.49min
+RecEraser Sub-model 1, Epoch [34/2000], Runs: 365, Loss: 0.3845, UL AUC: 0.5462, ACC AUC: 0.5518, ACC NDCG@20: 0.0015, Sub_model training time: 1.54min
+RecEraser Sub-model 1, Epoch [35/2000], Runs: 365, Loss: 0.3827, UL AUC: 0.5473, ACC AUC: 0.5514, ACC NDCG@20: 0.0014, Sub_model training time: 1.58min
+RecEraser Sub-model 1, Epoch [36/2000], Runs: 365, Loss: 0.3810, UL AUC: 0.5482, ACC AUC: 0.5508, ACC NDCG@20: 0.0013, Sub_model training time: 1.62min
+RecEraser Sub-model 1, Epoch [37/2000], Runs: 365, Loss: 0.3798, UL AUC: 0.5494, ACC AUC: 0.5502, ACC NDCG@20: 0.0012, Sub_model training time: 1.67min
+RecEraser Sub-model 1, Epoch [38/2000], Runs: 365, Loss: 0.3787, UL AUC: 0.5500, ACC AUC: 0.5496, ACC NDCG@20: 0.0011, Sub_model training time: 1.71min
+RecEraser Sub-model 1, Epoch [39/2000], Runs: 365, Loss: 0.3770, UL AUC: 0.5510, ACC AUC: 0.5489, ACC NDCG@20: 0.0011, Sub_model training time: 1.75min
+RecEraser Sub-model 1, Epoch [40/2000], Runs: 365, Loss: 0.3769, UL AUC: 0.5520, ACC AUC: 0.5483, ACC NDCG@20: 0.0010, Sub_model training time: 1.81min
+RecEraser Sub-model 1, Epoch [41/2000], Runs: 365, Loss: 0.3755, UL AUC: 0.5524, ACC AUC: 0.5478, ACC NDCG@20: 0.0010, Sub_model training time: 1.85min
+RecEraser Sub-model 1, Epoch [42/2000], Runs: 365, Loss: 0.3747, UL AUC: 0.5534, ACC AUC: 0.5477, ACC NDCG@20: 0.0009, Sub_model training time: 1.89min
+RecEraser Sub-model 1, Epoch [43/2000], Runs: 365, Loss: 0.3743, UL AUC: 0.5534, ACC AUC: 0.5473, ACC NDCG@20: 0.0009, Sub_model training time: 1.94min
+RecEraser Sub-model 1, Epoch [44/2000], Runs: 365, Loss: 0.3731, UL AUC: 0.5549, ACC AUC: 0.5470, ACC NDCG@20: 0.0009, Sub_model training time: 1.98min
+RecEraser Sub-model 1, Epoch [45/2000], Runs: 365, Loss: 0.3724, UL AUC: 0.5556, ACC AUC: 0.5467, ACC NDCG@20: 0.0009, Sub_model training time: 2.03min
+RecEraser Sub-model 1, Epoch [46/2000], Runs: 365, Loss: 0.3718, UL AUC: 0.5560, ACC AUC: 0.5466, ACC NDCG@20: 0.0009, Sub_model training time: 2.07min
+RecEraser Sub-model 1, Epoch [47/2000], Runs: 365, Loss: 0.3708, UL AUC: 0.5565, ACC AUC: 0.5465, ACC NDCG@20: 0.0009, Sub_model training time: 2.12min
+RecEraser Sub-model 1, Epoch [48/2000], Runs: 365, Loss: 0.3703, UL AUC: 0.5573, ACC AUC: 0.5464, ACC NDCG@20: 0.0009, Sub_model training time: 2.16min
+RecEraser Sub-model 1, Epoch [49/2000], Runs: 365, Loss: 0.3703, UL AUC: 0.5581, ACC AUC: 0.5461, ACC NDCG@20: 0.0009, Sub_model training time: 2.20min
+RecEraser Sub-model 1, Epoch [50/2000], Runs: 365, Loss: 0.3696, UL AUC: 0.5594, ACC AUC: 0.5458, ACC NDCG@20: 0.0009, Sub_model training time: 2.24min
+RecEraser Sub-model 1, Epoch [51/2000], Runs: 365, Loss: 0.3689, UL AUC: 0.5606, ACC AUC: 0.5458, ACC NDCG@20: 0.0009, Sub_model training time: 2.29min
+[RecEraser] START training sub-model 2, current time: 4.52min.
+RecEraser Sub-model 2, Epoch [1/2000], Runs: 920, Loss: 0.7510, UL AUC: 0.5372, ACC AUC: 0.4997, ACC NDCG@20: 0.0003, Sub_model training time: 0.06min
+RecEraser Sub-model 2, Epoch [2/2000], Runs: 920, Loss: 0.6905, UL AUC: 0.5592, ACC AUC: 0.4998, ACC NDCG@20: 0.0003, Sub_model training time: 0.13min
+RecEraser Sub-model 2, Epoch [3/2000], Runs: 920, Loss: 0.6609, UL AUC: 0.5710, ACC AUC: 0.5000, ACC NDCG@20: 0.0003, Sub_model training time: 0.19min
+RecEraser Sub-model 2, Epoch [4/2000], Runs: 920, Loss: 0.6454, UL AUC: 0.5800, ACC AUC: 0.5004, ACC NDCG@20: 0.0003, Sub_model training time: 0.25min
+RecEraser Sub-model 2, Epoch [5/2000], Runs: 920, Loss: 0.6337, UL AUC: 0.5886, ACC AUC: 0.5008, ACC NDCG@20: 0.0003, Sub_model training time: 0.32min
+RecEraser Sub-model 2, Epoch [6/2000], Runs: 920, Loss: 0.6255, UL AUC: 0.5961, ACC AUC: 0.5013, ACC NDCG@20: 0.0003, Sub_model training time: 0.38min
+RecEraser Sub-model 2, Epoch [7/2000], Runs: 920, Loss: 0.6177, UL AUC: 0.6017, ACC AUC: 0.5018, ACC NDCG@20: 0.0004, Sub_model training time: 0.44min
+RecEraser Sub-model 2, Epoch [8/2000], Runs: 920, Loss: 0.6114, UL AUC: 0.6058, ACC AUC: 0.5028, ACC NDCG@20: 0.0004, Sub_model training time: 0.50min
+RecEraser Sub-model 2, Epoch [9/2000], Runs: 920, Loss: 0.6048, UL AUC: 0.6104, ACC AUC: 0.5037, ACC NDCG@20: 0.0004, Sub_model training time: 0.57min
+RecEraser Sub-model 2, Epoch [10/2000], Runs: 920, Loss: 0.5991, UL AUC: 0.6135, ACC AUC: 0.5052, ACC NDCG@20: 0.0004, Sub_model training time: 0.63min
+RecEraser Sub-model 2, Epoch [11/2000], Runs: 920, Loss: 0.5927, UL AUC: 0.6174, ACC AUC: 0.5068, ACC NDCG@20: 0.0004, Sub_model training time: 0.69min
+RecEraser Sub-model 2, Epoch [12/2000], Runs: 920, Loss: 0.5858, UL AUC: 0.6214, ACC AUC: 0.5092, ACC NDCG@20: 0.0004, Sub_model training time: 0.74min
+RecEraser Sub-model 2, Epoch [13/2000], Runs: 920, Loss: 0.5775, UL AUC: 0.6254, ACC AUC: 0.5122, ACC NDCG@20: 0.0005, Sub_model training time: 0.80min
+RecEraser Sub-model 2, Epoch [14/2000], Runs: 920, Loss: 0.5675, UL AUC: 0.6294, ACC AUC: 0.5167, ACC NDCG@20: 0.0006, Sub_model training time: 0.87min
+RecEraser Sub-model 2, Epoch [15/2000], Runs: 920, Loss: 0.5548, UL AUC: 0.6322, ACC AUC: 0.5223, ACC NDCG@20: 0.0008, Sub_model training time: 0.93min
+RecEraser Sub-model 2, Epoch [16/2000], Runs: 920, Loss: 0.5409, UL AUC: 0.6359, ACC AUC: 0.5289, ACC NDCG@20: 0.0013, Sub_model training time: 0.99min
+RecEraser Sub-model 2, Epoch [17/2000], Runs: 920, Loss: 0.5251, UL AUC: 0.6399, ACC AUC: 0.5362, ACC NDCG@20: 0.0019, Sub_model training time: 1.05min
+RecEraser Sub-model 2, Epoch [18/2000], Runs: 920, Loss: 0.5089, UL AUC: 0.6448, ACC AUC: 0.5446, ACC NDCG@20: 0.0025, Sub_model training time: 1.11min
+RecEraser Sub-model 2, Epoch [19/2000], Runs: 920, Loss: 0.4929, UL AUC: 0.6482, ACC AUC: 0.5534, ACC NDCG@20: 0.0032, Sub_model training time: 1.17min
+RecEraser Sub-model 2, Epoch [20/2000], Runs: 920, Loss: 0.4788, UL AUC: 0.6552, ACC AUC: 0.5622, ACC NDCG@20: 0.0037, Sub_model training time: 1.23min
+RecEraser Sub-model 2, Epoch [21/2000], Runs: 920, Loss: 0.4656, UL AUC: 0.6606, ACC AUC: 0.5711, ACC NDCG@20: 0.0041, Sub_model training time: 1.29min
+RecEraser Sub-model 2, Epoch [22/2000], Runs: 920, Loss: 0.4544, UL AUC: 0.6635, ACC AUC: 0.5795, ACC NDCG@20: 0.0039, Sub_model training time: 1.35min
+RecEraser Sub-model 2, Epoch [23/2000], Runs: 920, Loss: 0.4449, UL AUC: 0.6686, ACC AUC: 0.5871, ACC NDCG@20: 0.0037, Sub_model training time: 1.41min
+RecEraser Sub-model 2, Epoch [24/2000], Runs: 920, Loss: 0.4370, UL AUC: 0.6737, ACC AUC: 0.5940, ACC NDCG@20: 0.0035, Sub_model training time: 1.47min
+RecEraser Sub-model 2, Epoch [25/2000], Runs: 920, Loss: 0.4301, UL AUC: 0.6777, ACC AUC: 0.6002, ACC NDCG@20: 0.0032, Sub_model training time: 1.54min
+RecEraser Sub-model 2, Epoch [26/2000], Runs: 920, Loss: 0.4244, UL AUC: 0.6821, ACC AUC: 0.6056, ACC NDCG@20: 0.0029, Sub_model training time: 1.59min
+RecEraser Sub-model 2, Epoch [27/2000], Runs: 920, Loss: 0.4192, UL AUC: 0.6873, ACC AUC: 0.6106, ACC NDCG@20: 0.0026, Sub_model training time: 1.66min
+RecEraser Sub-model 2, Epoch [28/2000], Runs: 920, Loss: 0.4144, UL AUC: 0.6896, ACC AUC: 0.6156, ACC NDCG@20: 0.0026, Sub_model training time: 1.72min
+RecEraser Sub-model 2, Epoch [29/2000], Runs: 920, Loss: 0.4108, UL AUC: 0.6938, ACC AUC: 0.6202, ACC NDCG@20: 0.0026, Sub_model training time: 1.78min
+RecEraser Sub-model 2, Epoch [30/2000], Runs: 920, Loss: 0.4072, UL AUC: 0.6977, ACC AUC: 0.6243, ACC NDCG@20: 0.0026, Sub_model training time: 1.85min
+RecEraser Sub-model 2, Epoch [31/2000], Runs: 920, Loss: 0.4042, UL AUC: 0.7012, ACC AUC: 0.6285, ACC NDCG@20: 0.0028, Sub_model training time: 1.91min
+RecEraser Sub-model 2, Epoch [32/2000], Runs: 920, Loss: 0.4012, UL AUC: 0.7041, ACC AUC: 0.6320, ACC NDCG@20: 0.0030, Sub_model training time: 1.97min
+RecEraser Sub-model 2, Epoch [33/2000], Runs: 920, Loss: 0.3987, UL AUC: 0.7072, ACC AUC: 0.6355, ACC NDCG@20: 0.0031, Sub_model training time: 2.04min
+RecEraser Sub-model 2, Epoch [34/2000], Runs: 920, Loss: 0.3964, UL AUC: 0.7110, ACC AUC: 0.6389, ACC NDCG@20: 0.0032, Sub_model training time: 2.10min
+RecEraser Sub-model 2, Epoch [35/2000], Runs: 920, Loss: 0.3941, UL AUC: 0.7134, ACC AUC: 0.6419, ACC NDCG@20: 0.0035, Sub_model training time: 2.16min
+RecEraser Sub-model 2, Epoch [36/2000], Runs: 920, Loss: 0.3923, UL AUC: 0.7155, ACC AUC: 0.6443, ACC NDCG@20: 0.0038, Sub_model training time: 2.22min
+RecEraser Sub-model 2, Epoch [37/2000], Runs: 920, Loss: 0.3904, UL AUC: 0.7183, ACC AUC: 0.6468, ACC NDCG@20: 0.0042, Sub_model training time: 2.28min
+RecEraser Sub-model 2, Epoch [38/2000], Runs: 920, Loss: 0.3883, UL AUC: 0.7219, ACC AUC: 0.6488, ACC NDCG@20: 0.0043, Sub_model training time: 2.34min
+RecEraser Sub-model 2, Epoch [39/2000], Runs: 920, Loss: 0.3868, UL AUC: 0.7238, ACC AUC: 0.6510, ACC NDCG@20: 0.0046, Sub_model training time: 2.40min
+RecEraser Sub-model 2, Epoch [40/2000], Runs: 920, Loss: 0.3851, UL AUC: 0.7263, ACC AUC: 0.6527, ACC NDCG@20: 0.0051, Sub_model training time: 2.46min
+RecEraser Sub-model 2, Epoch [41/2000], Runs: 920, Loss: 0.3835, UL AUC: 0.7288, ACC AUC: 0.6541, ACC NDCG@20: 0.0054, Sub_model training time: 2.52min
+RecEraser Sub-model 2, Epoch [42/2000], Runs: 920, Loss: 0.3823, UL AUC: 0.7289, ACC AUC: 0.6561, ACC NDCG@20: 0.0056, Sub_model training time: 2.58min
+RecEraser Sub-model 2, Epoch [43/2000], Runs: 920, Loss: 0.3811, UL AUC: 0.7316, ACC AUC: 0.6577, ACC NDCG@20: 0.0059, Sub_model training time: 2.64min
+RecEraser Sub-model 2, Epoch [44/2000], Runs: 920, Loss: 0.3797, UL AUC: 0.7320, ACC AUC: 0.6597, ACC NDCG@20: 0.0066, Sub_model training time: 2.71min
+RecEraser Sub-model 2, Epoch [45/2000], Runs: 920, Loss: 0.3785, UL AUC: 0.7320, ACC AUC: 0.6619, ACC NDCG@20: 0.0069, Sub_model training time: 2.77min
+RecEraser Sub-model 2, Epoch [46/2000], Runs: 920, Loss: 0.3771, UL AUC: 0.7330, ACC AUC: 0.6641, ACC NDCG@20: 0.0074, Sub_model training time: 2.84min
+RecEraser Sub-model 2, Epoch [47/2000], Runs: 920, Loss: 0.3757, UL AUC: 0.7324, ACC AUC: 0.6667, ACC NDCG@20: 0.0078, Sub_model training time: 2.90min
+RecEraser Sub-model 2, Epoch [48/2000], Runs: 920, Loss: 0.3743, UL AUC: 0.7321, ACC AUC: 0.6692, ACC NDCG@20: 0.0083, Sub_model training time: 2.96min
+RecEraser Sub-model 2, Epoch [49/2000], Runs: 920, Loss: 0.3732, UL AUC: 0.7321, ACC AUC: 0.6720, ACC NDCG@20: 0.0089, Sub_model training time: 3.02min
+RecEraser Sub-model 2, Epoch [50/2000], Runs: 920, Loss: 0.3719, UL AUC: 0.7316, ACC AUC: 0.6745, ACC NDCG@20: 0.0094, Sub_model training time: 3.08min
+RecEraser Sub-model 2, Epoch [51/2000], Runs: 920, Loss: 0.3708, UL AUC: 0.7321, ACC AUC: 0.6770, ACC NDCG@20: 0.0103, Sub_model training time: 3.14min
+RecEraser Sub-model 2, Epoch [52/2000], Runs: 920, Loss: 0.3695, UL AUC: 0.7310, ACC AUC: 0.6799, ACC NDCG@20: 0.0108, Sub_model training time: 3.21min
+RecEraser Sub-model 2, Epoch [53/2000], Runs: 920, Loss: 0.3683, UL AUC: 0.7307, ACC AUC: 0.6826, ACC NDCG@20: 0.0117, Sub_model training time: 3.27min
+RecEraser Sub-model 2, Epoch [54/2000], Runs: 920, Loss: 0.3672, UL AUC: 0.7295, ACC AUC: 0.6858, ACC NDCG@20: 0.0121, Sub_model training time: 3.33min
+RecEraser Sub-model 2, Epoch [55/2000], Runs: 920, Loss: 0.3659, UL AUC: 0.7300, ACC AUC: 0.6885, ACC NDCG@20: 0.0129, Sub_model training time: 3.39min
+RecEraser Sub-model 2, Epoch [56/2000], Runs: 920, Loss: 0.3648, UL AUC: 0.7281, ACC AUC: 0.6913, ACC NDCG@20: 0.0136, Sub_model training time: 3.45min
+RecEraser Sub-model 2, Epoch [57/2000], Runs: 920, Loss: 0.3635, UL AUC: 0.7284, ACC AUC: 0.6940, ACC NDCG@20: 0.0142, Sub_model training time: 3.51min
+RecEraser Sub-model 2, Epoch [58/2000], Runs: 920, Loss: 0.3625, UL AUC: 0.7274, ACC AUC: 0.6968, ACC NDCG@20: 0.0151, Sub_model training time: 3.57min
+RecEraser Sub-model 2, Epoch [59/2000], Runs: 920, Loss: 0.3613, UL AUC: 0.7276, ACC AUC: 0.6999, ACC NDCG@20: 0.0159, Sub_model training time: 3.64min
+RecEraser Sub-model 2, Epoch [60/2000], Runs: 920, Loss: 0.3602, UL AUC: 0.7267, ACC AUC: 0.7024, ACC NDCG@20: 0.0164, Sub_model training time: 3.70min
+RecEraser Sub-model 2, Epoch [61/2000], Runs: 920, Loss: 0.3592, UL AUC: 0.7254, ACC AUC: 0.7050, ACC NDCG@20: 0.0169, Sub_model training time: 3.76min
+RecEraser Sub-model 2, Epoch [62/2000], Runs: 920, Loss: 0.3580, UL AUC: 0.7248, ACC AUC: 0.7077, ACC NDCG@20: 0.0183, Sub_model training time: 3.82min
+RecEraser Sub-model 2, Epoch [63/2000], Runs: 920, Loss: 0.3570, UL AUC: 0.7246, ACC AUC: 0.7101, ACC NDCG@20: 0.0188, Sub_model training time: 3.88min
+RecEraser Sub-model 2, Epoch [64/2000], Runs: 920, Loss: 0.3559, UL AUC: 0.7259, ACC AUC: 0.7124, ACC NDCG@20: 0.0193, Sub_model training time: 3.94min
+RecEraser Sub-model 2, Epoch [65/2000], Runs: 920, Loss: 0.3548, UL AUC: 0.7247, ACC AUC: 0.7147, ACC NDCG@20: 0.0201, Sub_model training time: 4.00min
+RecEraser Sub-model 2, Epoch [66/2000], Runs: 920, Loss: 0.3539, UL AUC: 0.7238, ACC AUC: 0.7169, ACC NDCG@20: 0.0208, Sub_model training time: 4.06min
+RecEraser Sub-model 2, Epoch [67/2000], Runs: 920, Loss: 0.3531, UL AUC: 0.7231, ACC AUC: 0.7193, ACC NDCG@20: 0.0211, Sub_model training time: 4.13min
+RecEraser Sub-model 2, Epoch [68/2000], Runs: 920, Loss: 0.3522, UL AUC: 0.7226, ACC AUC: 0.7214, ACC NDCG@20: 0.0215, Sub_model training time: 4.19min
+RecEraser Sub-model 2, Epoch [69/2000], Runs: 920, Loss: 0.3512, UL AUC: 0.7220, ACC AUC: 0.7236, ACC NDCG@20: 0.0222, Sub_model training time: 4.25min
+RecEraser Sub-model 2, Epoch [70/2000], Runs: 920, Loss: 0.3503, UL AUC: 0.7193, ACC AUC: 0.7256, ACC NDCG@20: 0.0235, Sub_model training time: 4.31min
+RecEraser Sub-model 2, Epoch [71/2000], Runs: 920, Loss: 0.3495, UL AUC: 0.7176, ACC AUC: 0.7275, ACC NDCG@20: 0.0243, Sub_model training time: 4.37min
+RecEraser Sub-model 2, Epoch [72/2000], Runs: 920, Loss: 0.3487, UL AUC: 0.7170, ACC AUC: 0.7293, ACC NDCG@20: 0.0248, Sub_model training time: 4.43min
+RecEraser Sub-model 2, Epoch [73/2000], Runs: 920, Loss: 0.3479, UL AUC: 0.7160, ACC AUC: 0.7308, ACC NDCG@20: 0.0257, Sub_model training time: 4.49min
+RecEraser Sub-model 2, Epoch [74/2000], Runs: 920, Loss: 0.3472, UL AUC: 0.7160, ACC AUC: 0.7329, ACC NDCG@20: 0.0264, Sub_model training time: 4.55min
+RecEraser Sub-model 2, Epoch [75/2000], Runs: 920, Loss: 0.3465, UL AUC: 0.7148, ACC AUC: 0.7346, ACC NDCG@20: 0.0264, Sub_model training time: 4.61min
+RecEraser Sub-model 2, Epoch [76/2000], Runs: 920, Loss: 0.3457, UL AUC: 0.7139, ACC AUC: 0.7360, ACC NDCG@20: 0.0271, Sub_model training time: 4.67min
+RecEraser Sub-model 2, Epoch [77/2000], Runs: 920, Loss: 0.3453, UL AUC: 0.7124, ACC AUC: 0.7373, ACC NDCG@20: 0.0271, Sub_model training time: 4.74min
+RecEraser Sub-model 2, Epoch [78/2000], Runs: 920, Loss: 0.3445, UL AUC: 0.7111, ACC AUC: 0.7390, ACC NDCG@20: 0.0278, Sub_model training time: 4.80min
+RecEraser Sub-model 2, Epoch [79/2000], Runs: 920, Loss: 0.3439, UL AUC: 0.7110, ACC AUC: 0.7404, ACC NDCG@20: 0.0289, Sub_model training time: 4.85min
+RecEraser Sub-model 2, Epoch [80/2000], Runs: 920, Loss: 0.3435, UL AUC: 0.7100, ACC AUC: 0.7413, ACC NDCG@20: 0.0293, Sub_model training time: 4.92min
+RecEraser Sub-model 2, Epoch [81/2000], Runs: 920, Loss: 0.3428, UL AUC: 0.7093, ACC AUC: 0.7429, ACC NDCG@20: 0.0301, Sub_model training time: 4.98min
+RecEraser Sub-model 2, Epoch [82/2000], Runs: 920, Loss: 0.3423, UL AUC: 0.7089, ACC AUC: 0.7438, ACC NDCG@20: 0.0312, Sub_model training time: 5.04min
+RecEraser Sub-model 2, Epoch [83/2000], Runs: 920, Loss: 0.3418, UL AUC: 0.7085, ACC AUC: 0.7454, ACC NDCG@20: 0.0322, Sub_model training time: 5.10min
+RecEraser Sub-model 2, Epoch [84/2000], Runs: 920, Loss: 0.3412, UL AUC: 0.7066, ACC AUC: 0.7466, ACC NDCG@20: 0.0327, Sub_model training time: 5.16min
+RecEraser Sub-model 2, Epoch [85/2000], Runs: 920, Loss: 0.3408, UL AUC: 0.7051, ACC AUC: 0.7477, ACC NDCG@20: 0.0327, Sub_model training time: 5.22min
+RecEraser Sub-model 2, Epoch [86/2000], Runs: 920, Loss: 0.3403, UL AUC: 0.7035, ACC AUC: 0.7485, ACC NDCG@20: 0.0336, Sub_model training time: 5.28min
+RecEraser Sub-model 2, Epoch [87/2000], Runs: 920, Loss: 0.3399, UL AUC: 0.7033, ACC AUC: 0.7495, ACC NDCG@20: 0.0343, Sub_model training time: 5.34min
+RecEraser Sub-model 2, Epoch [88/2000], Runs: 920, Loss: 0.3395, UL AUC: 0.7019, ACC AUC: 0.7509, ACC NDCG@20: 0.0343, Sub_model training time: 5.40min
+RecEraser Sub-model 2, Epoch [89/2000], Runs: 920, Loss: 0.3391, UL AUC: 0.7010, ACC AUC: 0.7517, ACC NDCG@20: 0.0360, Sub_model training time: 5.46min
+RecEraser Sub-model 2, Epoch [90/2000], Runs: 920, Loss: 0.3387, UL AUC: 0.6999, ACC AUC: 0.7524, ACC NDCG@20: 0.0362, Sub_model training time: 5.52min
+RecEraser Sub-model 2, Epoch [91/2000], Runs: 920, Loss: 0.3383, UL AUC: 0.7013, ACC AUC: 0.7535, ACC NDCG@20: 0.0360, Sub_model training time: 5.58min
+RecEraser Sub-model 2, Epoch [92/2000], Runs: 920, Loss: 0.3381, UL AUC: 0.6991, ACC AUC: 0.7540, ACC NDCG@20: 0.0364, Sub_model training time: 5.64min
+RecEraser Sub-model 2, Epoch [93/2000], Runs: 920, Loss: 0.3377, UL AUC: 0.6989, ACC AUC: 0.7550, ACC NDCG@20: 0.0376, Sub_model training time: 5.70min
+RecEraser Sub-model 2, Epoch [94/2000], Runs: 920, Loss: 0.3374, UL AUC: 0.6974, ACC AUC: 0.7560, ACC NDCG@20: 0.0379, Sub_model training time: 5.76min
+RecEraser Sub-model 2, Epoch [95/2000], Runs: 920, Loss: 0.3369, UL AUC: 0.6980, ACC AUC: 0.7565, ACC NDCG@20: 0.0380, Sub_model training time: 5.82min
+RecEraser Sub-model 2, Epoch [96/2000], Runs: 920, Loss: 0.3369, UL AUC: 0.6985, ACC AUC: 0.7571, ACC NDCG@20: 0.0380, Sub_model training time: 5.88min
+RecEraser Sub-model 2, Epoch [97/2000], Runs: 920, Loss: 0.3364, UL AUC: 0.6980, ACC AUC: 0.7582, ACC NDCG@20: 0.0392, Sub_model training time: 5.94min
+RecEraser Sub-model 2, Epoch [98/2000], Runs: 920, Loss: 0.3362, UL AUC: 0.6968, ACC AUC: 0.7589, ACC NDCG@20: 0.0390, Sub_model training time: 6.00min
+RecEraser Sub-model 2, Epoch [99/2000], Runs: 920, Loss: 0.3359, UL AUC: 0.6970, ACC AUC: 0.7593, ACC NDCG@20: 0.0394, Sub_model training time: 6.06min
+RecEraser Sub-model 2, Epoch [100/2000], Runs: 920, Loss: 0.3357, UL AUC: 0.6962, ACC AUC: 0.7596, ACC NDCG@20: 0.0414, Sub_model training time: 6.12min
+RecEraser Sub-model 2, Epoch [101/2000], Runs: 920, Loss: 0.3353, UL AUC: 0.6947, ACC AUC: 0.7604, ACC NDCG@20: 0.0409, Sub_model training time: 6.18min
+RecEraser Sub-model 2, Epoch [102/2000], Runs: 920, Loss: 0.3350, UL AUC: 0.6959, ACC AUC: 0.7613, ACC NDCG@20: 0.0419, Sub_model training time: 6.24min
+RecEraser Sub-model 2, Epoch [103/2000], Runs: 920, Loss: 0.3350, UL AUC: 0.6946, ACC AUC: 0.7614, ACC NDCG@20: 0.0413, Sub_model training time: 6.30min
+RecEraser Sub-model 2, Epoch [104/2000], Runs: 920, Loss: 0.3348, UL AUC: 0.6940, ACC AUC: 0.7623, ACC NDCG@20: 0.0427, Sub_model training time: 6.36min
+RecEraser Sub-model 2, Epoch [105/2000], Runs: 920, Loss: 0.3346, UL AUC: 0.6940, ACC AUC: 0.7628, ACC NDCG@20: 0.0430, Sub_model training time: 6.42min
+RecEraser Sub-model 2, Epoch [106/2000], Runs: 920, Loss: 0.3344, UL AUC: 0.6929, ACC AUC: 0.7630, ACC NDCG@20: 0.0434, Sub_model training time: 6.48min
+RecEraser Sub-model 2, Epoch [107/2000], Runs: 920, Loss: 0.3341, UL AUC: 0.6927, ACC AUC: 0.7634, ACC NDCG@20: 0.0437, Sub_model training time: 6.54min
+RecEraser Sub-model 2, Epoch [108/2000], Runs: 920, Loss: 0.3340, UL AUC: 0.6926, ACC AUC: 0.7636, ACC NDCG@20: 0.0431, Sub_model training time: 6.60min
+RecEraser Sub-model 2, Epoch [109/2000], Runs: 920, Loss: 0.3338, UL AUC: 0.6919, ACC AUC: 0.7643, ACC NDCG@20: 0.0432, Sub_model training time: 6.66min
+RecEraser Sub-model 2, Epoch [110/2000], Runs: 920, Loss: 0.3337, UL AUC: 0.6921, ACC AUC: 0.7648, ACC NDCG@20: 0.0443, Sub_model training time: 6.73min
+RecEraser Sub-model 2, Epoch [111/2000], Runs: 920, Loss: 0.3335, UL AUC: 0.6913, ACC AUC: 0.7651, ACC NDCG@20: 0.0433, Sub_model training time: 6.79min
+RecEraser Sub-model 2, Epoch [112/2000], Runs: 920, Loss: 0.3332, UL AUC: 0.6906, ACC AUC: 0.7655, ACC NDCG@20: 0.0445, Sub_model training time: 6.85min
+RecEraser Sub-model 2, Epoch [113/2000], Runs: 920, Loss: 0.3331, UL AUC: 0.6910, ACC AUC: 0.7655, ACC NDCG@20: 0.0451, Sub_model training time: 6.91min
+RecEraser Sub-model 2, Epoch [114/2000], Runs: 920, Loss: 0.3330, UL AUC: 0.6901, ACC AUC: 0.7660, ACC NDCG@20: 0.0447, Sub_model training time: 6.97min
+RecEraser Sub-model 2, Epoch [115/2000], Runs: 920, Loss: 0.3329, UL AUC: 0.6907, ACC AUC: 0.7662, ACC NDCG@20: 0.0442, Sub_model training time: 7.03min
+RecEraser Sub-model 2, Epoch [116/2000], Runs: 920, Loss: 0.3326, UL AUC: 0.6913, ACC AUC: 0.7666, ACC NDCG@20: 0.0454, Sub_model training time: 7.08min
+RecEraser Sub-model 2, Epoch [117/2000], Runs: 920, Loss: 0.3326, UL AUC: 0.6906, ACC AUC: 0.7671, ACC NDCG@20: 0.0441, Sub_model training time: 7.14min
+RecEraser Sub-model 2, Epoch [118/2000], Runs: 920, Loss: 0.3324, UL AUC: 0.6894, ACC AUC: 0.7675, ACC NDCG@20: 0.0457, Sub_model training time: 7.20min
+RecEraser Sub-model 2, Epoch [119/2000], Runs: 920, Loss: 0.3322, UL AUC: 0.6890, ACC AUC: 0.7674, ACC NDCG@20: 0.0449, Sub_model training time: 7.26min
+RecEraser Sub-model 2, Epoch [120/2000], Runs: 920, Loss: 0.3321, UL AUC: 0.6896, ACC AUC: 0.7676, ACC NDCG@20: 0.0452, Sub_model training time: 7.33min
+RecEraser Sub-model 2, Epoch [121/2000], Runs: 920, Loss: 0.3320, UL AUC: 0.6887, ACC AUC: 0.7682, ACC NDCG@20: 0.0470, Sub_model training time: 7.39min
+RecEraser Sub-model 2, Epoch [122/2000], Runs: 920, Loss: 0.3320, UL AUC: 0.6890, ACC AUC: 0.7682, ACC NDCG@20: 0.0462, Sub_model training time: 7.44min
+RecEraser Sub-model 2, Epoch [123/2000], Runs: 920, Loss: 0.3318, UL AUC: 0.6869, ACC AUC: 0.7689, ACC NDCG@20: 0.0458, Sub_model training time: 7.50min
+RecEraser Sub-model 2, Epoch [124/2000], Runs: 920, Loss: 0.3317, UL AUC: 0.6865, ACC AUC: 0.7689, ACC NDCG@20: 0.0461, Sub_model training time: 7.56min
+RecEraser Sub-model 2, Epoch [125/2000], Runs: 920, Loss: 0.3315, UL AUC: 0.6849, ACC AUC: 0.7695, ACC NDCG@20: 0.0484, Sub_model training time: 7.63min
+RecEraser Sub-model 2, Epoch [126/2000], Runs: 920, Loss: 0.3315, UL AUC: 0.6847, ACC AUC: 0.7697, ACC NDCG@20: 0.0477, Sub_model training time: 7.69min
+RecEraser Sub-model 2, Epoch [127/2000], Runs: 920, Loss: 0.3314, UL AUC: 0.6844, ACC AUC: 0.7700, ACC NDCG@20: 0.0475, Sub_model training time: 7.75min
+RecEraser Sub-model 2, Epoch [128/2000], Runs: 920, Loss: 0.3313, UL AUC: 0.6841, ACC AUC: 0.7701, ACC NDCG@20: 0.0474, Sub_model training time: 7.81min
+RecEraser Sub-model 2, Epoch [129/2000], Runs: 920, Loss: 0.3311, UL AUC: 0.6819, ACC AUC: 0.7706, ACC NDCG@20: 0.0472, Sub_model training time: 7.87min
+RecEraser Sub-model 2, Epoch [130/2000], Runs: 920, Loss: 0.3311, UL AUC: 0.6829, ACC AUC: 0.7704, ACC NDCG@20: 0.0476, Sub_model training time: 7.93min
+RecEraser Sub-model 2, Epoch [131/2000], Runs: 920, Loss: 0.3310, UL AUC: 0.6819, ACC AUC: 0.7709, ACC NDCG@20: 0.0479, Sub_model training time: 7.99min
+RecEraser Sub-model 2, Epoch [132/2000], Runs: 920, Loss: 0.3310, UL AUC: 0.6828, ACC AUC: 0.7705, ACC NDCG@20: 0.0474, Sub_model training time: 8.05min
+RecEraser Sub-model 2, Epoch [133/2000], Runs: 920, Loss: 0.3309, UL AUC: 0.6832, ACC AUC: 0.7711, ACC NDCG@20: 0.0483, Sub_model training time: 8.11min
+RecEraser Sub-model 2, Epoch [134/2000], Runs: 920, Loss: 0.3310, UL AUC: 0.6833, ACC AUC: 0.7714, ACC NDCG@20: 0.0475, Sub_model training time: 8.17min
+RecEraser Sub-model 2, Epoch [135/2000], Runs: 920, Loss: 0.3307, UL AUC: 0.6827, ACC AUC: 0.7714, ACC NDCG@20: 0.0485, Sub_model training time: 8.23min
+RecEraser Sub-model 2, Epoch [136/2000], Runs: 920, Loss: 0.3306, UL AUC: 0.6828, ACC AUC: 0.7719, ACC NDCG@20: 0.0478, Sub_model training time: 8.29min
+RecEraser Sub-model 2, Epoch [137/2000], Runs: 920, Loss: 0.3305, UL AUC: 0.6826, ACC AUC: 0.7721, ACC NDCG@20: 0.0492, Sub_model training time: 8.35min
+RecEraser Sub-model 2, Epoch [138/2000], Runs: 920, Loss: 0.3305, UL AUC: 0.6826, ACC AUC: 0.7722, ACC NDCG@20: 0.0476, Sub_model training time: 8.41min
+RecEraser Sub-model 2, Epoch [139/2000], Runs: 920, Loss: 0.3304, UL AUC: 0.6831, ACC AUC: 0.7719, ACC NDCG@20: 0.0485, Sub_model training time: 8.47min
+RecEraser Sub-model 2, Epoch [140/2000], Runs: 920, Loss: 0.3302, UL AUC: 0.6819, ACC AUC: 0.7721, ACC NDCG@20: 0.0485, Sub_model training time: 8.53min
+RecEraser Sub-model 2, Epoch [141/2000], Runs: 920, Loss: 0.3303, UL AUC: 0.6831, ACC AUC: 0.7723, ACC NDCG@20: 0.0497, Sub_model training time: 8.59min
+RecEraser Sub-model 2, Epoch [142/2000], Runs: 920, Loss: 0.3301, UL AUC: 0.6828, ACC AUC: 0.7726, ACC NDCG@20: 0.0492, Sub_model training time: 8.65min
+RecEraser Sub-model 2, Epoch [143/2000], Runs: 920, Loss: 0.3301, UL AUC: 0.6819, ACC AUC: 0.7728, ACC NDCG@20: 0.0499, Sub_model training time: 8.71min
+RecEraser Sub-model 2, Epoch [144/2000], Runs: 920, Loss: 0.3300, UL AUC: 0.6821, ACC AUC: 0.7730, ACC NDCG@20: 0.0486, Sub_model training time: 8.77min
+RecEraser Sub-model 2, Epoch [145/2000], Runs: 920, Loss: 0.3299, UL AUC: 0.6814, ACC AUC: 0.7732, ACC NDCG@20: 0.0493, Sub_model training time: 8.83min
+RecEraser Sub-model 2, Epoch [146/2000], Runs: 920, Loss: 0.3299, UL AUC: 0.6804, ACC AUC: 0.7735, ACC NDCG@20: 0.0495, Sub_model training time: 8.89min
+RecEraser Sub-model 2, Epoch [147/2000], Runs: 920, Loss: 0.3298, UL AUC: 0.6803, ACC AUC: 0.7736, ACC NDCG@20: 0.0489, Sub_model training time: 8.95min
+RecEraser Sub-model 2, Epoch [148/2000], Runs: 920, Loss: 0.3299, UL AUC: 0.6783, ACC AUC: 0.7735, ACC NDCG@20: 0.0491, Sub_model training time: 9.01min
+RecEraser Sub-model 2, Epoch [149/2000], Runs: 920, Loss: 0.3297, UL AUC: 0.6794, ACC AUC: 0.7738, ACC NDCG@20: 0.0499, Sub_model training time: 9.08min
+RecEraser Sub-model 2, Epoch [150/2000], Runs: 920, Loss: 0.3296, UL AUC: 0.6782, ACC AUC: 0.7740, ACC NDCG@20: 0.0497, Sub_model training time: 9.14min
+RecEraser Sub-model 2, Epoch [151/2000], Runs: 920, Loss: 0.3295, UL AUC: 0.6796, ACC AUC: 0.7740, ACC NDCG@20: 0.0493, Sub_model training time: 9.20min
+RecEraser Sub-model 2, Epoch [152/2000], Runs: 920, Loss: 0.3295, UL AUC: 0.6785, ACC AUC: 0.7736, ACC NDCG@20: 0.0511, Sub_model training time: 9.26min
+RecEraser Sub-model 2, Epoch [153/2000], Runs: 920, Loss: 0.3296, UL AUC: 0.6780, ACC AUC: 0.7739, ACC NDCG@20: 0.0498, Sub_model training time: 9.32min
+RecEraser Sub-model 2, Epoch [154/2000], Runs: 920, Loss: 0.3294, UL AUC: 0.6780, ACC AUC: 0.7738, ACC NDCG@20: 0.0508, Sub_model training time: 9.38min
+RecEraser Sub-model 2, Epoch [155/2000], Runs: 920, Loss: 0.3293, UL AUC: 0.6782, ACC AUC: 0.7742, ACC NDCG@20: 0.0497, Sub_model training time: 9.44min
+RecEraser Sub-model 2, Epoch [156/2000], Runs: 920, Loss: 0.3293, UL AUC: 0.6795, ACC AUC: 0.7741, ACC NDCG@20: 0.0510, Sub_model training time: 9.50min
+RecEraser Sub-model 2, Epoch [157/2000], Runs: 920, Loss: 0.3294, UL AUC: 0.6786, ACC AUC: 0.7745, ACC NDCG@20: 0.0503, Sub_model training time: 9.56min
+RecEraser Sub-model 2, Epoch [158/2000], Runs: 920, Loss: 0.3294, UL AUC: 0.6800, ACC AUC: 0.7744, ACC NDCG@20: 0.0507, Sub_model training time: 9.62min
+RecEraser Sub-model 2, Epoch [159/2000], Runs: 920, Loss: 0.3294, UL AUC: 0.6781, ACC AUC: 0.7744, ACC NDCG@20: 0.0507, Sub_model training time: 9.68min
+RecEraser Sub-model 2, Epoch [160/2000], Runs: 920, Loss: 0.3292, UL AUC: 0.6783, ACC AUC: 0.7747, ACC NDCG@20: 0.0508, Sub_model training time: 9.74min
+RecEraser Sub-model 2, Epoch [161/2000], Runs: 920, Loss: 0.3292, UL AUC: 0.6787, ACC AUC: 0.7746, ACC NDCG@20: 0.0512, Sub_model training time: 9.80min
+RecEraser Sub-model 2, Epoch [162/2000], Runs: 920, Loss: 0.3290, UL AUC: 0.6791, ACC AUC: 0.7746, ACC NDCG@20: 0.0527, Sub_model training time: 9.86min
+RecEraser Sub-model 2, Epoch [163/2000], Runs: 920, Loss: 0.3291, UL AUC: 0.6798, ACC AUC: 0.7750, ACC NDCG@20: 0.0520, Sub_model training time: 9.92min
+RecEraser Sub-model 2, Epoch [164/2000], Runs: 920, Loss: 0.3291, UL AUC: 0.6775, ACC AUC: 0.7751, ACC NDCG@20: 0.0514, Sub_model training time: 9.98min
+RecEraser Sub-model 2, Epoch [165/2000], Runs: 920, Loss: 0.3290, UL AUC: 0.6770, ACC AUC: 0.7753, ACC NDCG@20: 0.0508, Sub_model training time: 10.04min
+RecEraser Sub-model 2, Epoch [166/2000], Runs: 920, Loss: 0.3288, UL AUC: 0.6773, ACC AUC: 0.7753, ACC NDCG@20: 0.0514, Sub_model training time: 10.10min
+RecEraser Sub-model 2, Epoch [167/2000], Runs: 920, Loss: 0.3289, UL AUC: 0.6782, ACC AUC: 0.7751, ACC NDCG@20: 0.0515, Sub_model training time: 10.16min
+RecEraser Sub-model 2, Epoch [168/2000], Runs: 920, Loss: 0.3289, UL AUC: 0.6757, ACC AUC: 0.7754, ACC NDCG@20: 0.0530, Sub_model training time: 10.22min
+RecEraser Sub-model 2, Epoch [169/2000], Runs: 920, Loss: 0.3288, UL AUC: 0.6777, ACC AUC: 0.7753, ACC NDCG@20: 0.0535, Sub_model training time: 10.28min
+RecEraser Sub-model 2, Epoch [170/2000], Runs: 920, Loss: 0.3287, UL AUC: 0.6775, ACC AUC: 0.7754, ACC NDCG@20: 0.0525, Sub_model training time: 10.34min
+RecEraser Sub-model 2, Epoch [171/2000], Runs: 920, Loss: 0.3289, UL AUC: 0.6793, ACC AUC: 0.7753, ACC NDCG@20: 0.0518, Sub_model training time: 10.40min
+RecEraser Sub-model 2, Epoch [172/2000], Runs: 920, Loss: 0.3288, UL AUC: 0.6787, ACC AUC: 0.7752, ACC NDCG@20: 0.0529, Sub_model training time: 10.46min
+RecEraser Sub-model 2, Epoch [173/2000], Runs: 920, Loss: 0.3286, UL AUC: 0.6794, ACC AUC: 0.7755, ACC NDCG@20: 0.0524, Sub_model training time: 10.52min
+RecEraser Sub-model 2, Epoch [174/2000], Runs: 920, Loss: 0.3286, UL AUC: 0.6789, ACC AUC: 0.7756, ACC NDCG@20: 0.0520, Sub_model training time: 10.58min
+RecEraser Sub-model 2, Epoch [175/2000], Runs: 920, Loss: 0.3285, UL AUC: 0.6781, ACC AUC: 0.7755, ACC NDCG@20: 0.0525, Sub_model training time: 10.64min
+RecEraser Sub-model 2, Epoch [176/2000], Runs: 920, Loss: 0.3286, UL AUC: 0.6752, ACC AUC: 0.7757, ACC NDCG@20: 0.0525, Sub_model training time: 10.70min
+RecEraser Sub-model 2, Epoch [177/2000], Runs: 920, Loss: 0.3286, UL AUC: 0.6758, ACC AUC: 0.7755, ACC NDCG@20: 0.0530, Sub_model training time: 10.77min
+RecEraser Sub-model 2, Epoch [178/2000], Runs: 920, Loss: 0.3284, UL AUC: 0.6757, ACC AUC: 0.7760, ACC NDCG@20: 0.0523, Sub_model training time: 10.83min
+RecEraser Sub-model 2, Epoch [179/2000], Runs: 920, Loss: 0.3284, UL AUC: 0.6750, ACC AUC: 0.7759, ACC NDCG@20: 0.0530, Sub_model training time: 10.89min
+RecEraser Sub-model 2, Epoch [180/2000], Runs: 920, Loss: 0.3284, UL AUC: 0.6754, ACC AUC: 0.7761, ACC NDCG@20: 0.0538, Sub_model training time: 10.95min
+RecEraser Sub-model 2, Epoch [181/2000], Runs: 920, Loss: 0.3284, UL AUC: 0.6748, ACC AUC: 0.7762, ACC NDCG@20: 0.0527, Sub_model training time: 11.01min
+RecEraser Sub-model 2, Epoch [182/2000], Runs: 920, Loss: 0.3284, UL AUC: 0.6779, ACC AUC: 0.7763, ACC NDCG@20: 0.0527, Sub_model training time: 11.07min
+RecEraser Sub-model 2, Epoch [183/2000], Runs: 920, Loss: 0.3284, UL AUC: 0.6780, ACC AUC: 0.7763, ACC NDCG@20: 0.0531, Sub_model training time: 11.13min
+RecEraser Sub-model 2, Epoch [184/2000], Runs: 920, Loss: 0.3283, UL AUC: 0.6787, ACC AUC: 0.7760, ACC NDCG@20: 0.0542, Sub_model training time: 11.19min
+RecEraser Sub-model 2, Epoch [185/2000], Runs: 920, Loss: 0.3283, UL AUC: 0.6785, ACC AUC: 0.7762, ACC NDCG@20: 0.0538, Sub_model training time: 11.25min
+RecEraser Sub-model 2, Epoch [186/2000], Runs: 920, Loss: 0.3281, UL AUC: 0.6789, ACC AUC: 0.7762, ACC NDCG@20: 0.0525, Sub_model training time: 11.31min
+RecEraser Sub-model 2, Epoch [187/2000], Runs: 920, Loss: 0.3281, UL AUC: 0.6780, ACC AUC: 0.7761, ACC NDCG@20: 0.0534, Sub_model training time: 11.38min
+RecEraser Sub-model 2, Epoch [188/2000], Runs: 920, Loss: 0.3281, UL AUC: 0.6793, ACC AUC: 0.7763, ACC NDCG@20: 0.0528, Sub_model training time: 11.44min
+RecEraser Sub-model 2, Epoch [189/2000], Runs: 920, Loss: 0.3279, UL AUC: 0.6786, ACC AUC: 0.7764, ACC NDCG@20: 0.0529, Sub_model training time: 11.49min
+RecEraser Sub-model 2, Epoch [190/2000], Runs: 920, Loss: 0.3282, UL AUC: 0.6788, ACC AUC: 0.7764, ACC NDCG@20: 0.0536, Sub_model training time: 11.55min
+RecEraser Sub-model 2, Epoch [191/2000], Runs: 920, Loss: 0.3280, UL AUC: 0.6783, ACC AUC: 0.7767, ACC NDCG@20: 0.0535, Sub_model training time: 11.61min
+RecEraser Sub-model 2, Epoch [192/2000], Runs: 920, Loss: 0.3281, UL AUC: 0.6768, ACC AUC: 0.7765, ACC NDCG@20: 0.0538, Sub_model training time: 11.68min
+RecEraser Sub-model 2, Epoch [193/2000], Runs: 920, Loss: 0.3281, UL AUC: 0.6780, ACC AUC: 0.7765, ACC NDCG@20: 0.0541, Sub_model training time: 11.74min
+RecEraser Sub-model 2, Epoch [194/2000], Runs: 920, Loss: 0.3280, UL AUC: 0.6775, ACC AUC: 0.7764, ACC NDCG@20: 0.0539, Sub_model training time: 11.80min
+RecEraser Sub-model 2, Epoch [195/2000], Runs: 920, Loss: 0.3279, UL AUC: 0.6779, ACC AUC: 0.7767, ACC NDCG@20: 0.0536, Sub_model training time: 11.86min
+RecEraser Sub-model 2, Epoch [196/2000], Runs: 920, Loss: 0.3279, UL AUC: 0.6784, ACC AUC: 0.7769, ACC NDCG@20: 0.0539, Sub_model training time: 11.92min
+RecEraser Sub-model 2, Epoch [197/2000], Runs: 920, Loss: 0.3280, UL AUC: 0.6800, ACC AUC: 0.7772, ACC NDCG@20: 0.0536, Sub_model training time: 11.98min
+RecEraser Sub-model 2, Epoch [198/2000], Runs: 920, Loss: 0.3278, UL AUC: 0.6780, ACC AUC: 0.7772, ACC NDCG@20: 0.0531, Sub_model training time: 12.04min
+RecEraser Sub-model 2, Epoch [199/2000], Runs: 920, Loss: 0.3279, UL AUC: 0.6787, ACC AUC: 0.7772, ACC NDCG@20: 0.0540, Sub_model training time: 12.10min
+RecEraser Sub-model 2, Epoch [200/2000], Runs: 920, Loss: 0.3279, UL AUC: 0.6791, ACC AUC: 0.7774, ACC NDCG@20: 0.0540, Sub_model training time: 12.15min
+RecEraser Sub-model 2, Epoch [201/2000], Runs: 920, Loss: 0.3279, UL AUC: 0.6783, ACC AUC: 0.7769, ACC NDCG@20: 0.0550, Sub_model training time: 12.21min
+RecEraser Sub-model 2, Epoch [202/2000], Runs: 920, Loss: 0.3277, UL AUC: 0.6784, ACC AUC: 0.7774, ACC NDCG@20: 0.0546, Sub_model training time: 12.27min
+RecEraser Sub-model 2, Epoch [203/2000], Runs: 920, Loss: 0.3278, UL AUC: 0.6785, ACC AUC: 0.7775, ACC NDCG@20: 0.0534, Sub_model training time: 12.33min
+RecEraser Sub-model 2, Epoch [204/2000], Runs: 920, Loss: 0.3278, UL AUC: 0.6777, ACC AUC: 0.7774, ACC NDCG@20: 0.0533, Sub_model training time: 12.39min
+RecEraser Sub-model 2, Epoch [205/2000], Runs: 920, Loss: 0.3278, UL AUC: 0.6772, ACC AUC: 0.7776, ACC NDCG@20: 0.0542, Sub_model training time: 12.45min
+RecEraser Sub-model 2, Epoch [206/2000], Runs: 920, Loss: 0.3278, UL AUC: 0.6772, ACC AUC: 0.7776, ACC NDCG@20: 0.0546, Sub_model training time: 12.51min
+RecEraser Sub-model 2, Epoch [207/2000], Runs: 920, Loss: 0.3278, UL AUC: 0.6772, ACC AUC: 0.7775, ACC NDCG@20: 0.0542, Sub_model training time: 12.57min
+RecEraser Sub-model 2, Epoch [208/2000], Runs: 920, Loss: 0.3278, UL AUC: 0.6764, ACC AUC: 0.7775, ACC NDCG@20: 0.0547, Sub_model training time: 12.63min
+RecEraser Sub-model 2, Epoch [209/2000], Runs: 920, Loss: 0.3277, UL AUC: 0.6775, ACC AUC: 0.7774, ACC NDCG@20: 0.0547, Sub_model training time: 12.69min
+RecEraser Sub-model 2, Epoch [210/2000], Runs: 920, Loss: 0.3278, UL AUC: 0.6767, ACC AUC: 0.7776, ACC NDCG@20: 0.0544, Sub_model training time: 12.75min
+RecEraser Sub-model 2, Epoch [211/2000], Runs: 920, Loss: 0.3276, UL AUC: 0.6766, ACC AUC: 0.7773, ACC NDCG@20: 0.0539, Sub_model training time: 12.81min
+RecEraser Sub-model 2, Epoch [212/2000], Runs: 920, Loss: 0.3277, UL AUC: 0.6781, ACC AUC: 0.7775, ACC NDCG@20: 0.0534, Sub_model training time: 12.87min
+RecEraser Sub-model 2, Epoch [213/2000], Runs: 920, Loss: 0.3277, UL AUC: 0.6771, ACC AUC: 0.7775, ACC NDCG@20: 0.0547, Sub_model training time: 12.93min
+RecEraser Sub-model 2, Epoch [214/2000], Runs: 920, Loss: 0.3276, UL AUC: 0.6764, ACC AUC: 0.7774, ACC NDCG@20: 0.0548, Sub_model training time: 12.99min
+RecEraser Sub-model 2, Epoch [215/2000], Runs: 920, Loss: 0.3277, UL AUC: 0.6750, ACC AUC: 0.7772, ACC NDCG@20: 0.0541, Sub_model training time: 13.06min
+RecEraser Sub-model 2, Epoch [216/2000], Runs: 920, Loss: 0.3277, UL AUC: 0.6754, ACC AUC: 0.7771, ACC NDCG@20: 0.0547, Sub_model training time: 13.12min
+RecEraser Sub-model 2, Epoch [217/2000], Runs: 920, Loss: 0.3275, UL AUC: 0.6750, ACC AUC: 0.7773, ACC NDCG@20: 0.0540, Sub_model training time: 13.18min
+RecEraser Sub-model 2, Epoch [218/2000], Runs: 920, Loss: 0.3275, UL AUC: 0.6756, ACC AUC: 0.7775, ACC NDCG@20: 0.0545, Sub_model training time: 13.23min
+RecEraser Sub-model 2, Epoch [219/2000], Runs: 920, Loss: 0.3276, UL AUC: 0.6761, ACC AUC: 0.7774, ACC NDCG@20: 0.0545, Sub_model training time: 13.29min
+RecEraser Sub-model 2, Epoch [220/2000], Runs: 920, Loss: 0.3274, UL AUC: 0.6774, ACC AUC: 0.7772, ACC NDCG@20: 0.0543, Sub_model training time: 13.36min
+RecEraser Sub-model 2, Epoch [221/2000], Runs: 920, Loss: 0.3275, UL AUC: 0.6775, ACC AUC: 0.7774, ACC NDCG@20: 0.0544, Sub_model training time: 13.42min
+RecEraser Sub-model 2, Epoch [222/2000], Runs: 920, Loss: 0.3274, UL AUC: 0.6756, ACC AUC: 0.7775, ACC NDCG@20: 0.0555, Sub_model training time: 13.48min
+RecEraser Sub-model 2, Epoch [223/2000], Runs: 920, Loss: 0.3275, UL AUC: 0.6786, ACC AUC: 0.7777, ACC NDCG@20: 0.0541, Sub_model training time: 13.54min
+RecEraser Sub-model 2, Epoch [224/2000], Runs: 920, Loss: 0.3276, UL AUC: 0.6786, ACC AUC: 0.7776, ACC NDCG@20: 0.0554, Sub_model training time: 13.60min
+RecEraser Sub-model 2, Epoch [225/2000], Runs: 920, Loss: 0.3275, UL AUC: 0.6762, ACC AUC: 0.7778, ACC NDCG@20: 0.0545, Sub_model training time: 13.66min
+RecEraser Sub-model 2, Epoch [226/2000], Runs: 920, Loss: 0.3275, UL AUC: 0.6780, ACC AUC: 0.7773, ACC NDCG@20: 0.0551, Sub_model training time: 13.72min
+RecEraser Sub-model 2, Epoch [227/2000], Runs: 920, Loss: 0.3275, UL AUC: 0.6760, ACC AUC: 0.7777, ACC NDCG@20: 0.0554, Sub_model training time: 13.78min
+RecEraser Sub-model 2, Epoch [228/2000], Runs: 920, Loss: 0.3274, UL AUC: 0.6749, ACC AUC: 0.7777, ACC NDCG@20: 0.0552, Sub_model training time: 13.84min
+RecEraser Sub-model 2, Epoch [229/2000], Runs: 920, Loss: 0.3274, UL AUC: 0.6748, ACC AUC: 0.7775, ACC NDCG@20: 0.0554, Sub_model training time: 13.90min
+RecEraser Sub-model 2, Epoch [230/2000], Runs: 920, Loss: 0.3274, UL AUC: 0.6737, ACC AUC: 0.7775, ACC NDCG@20: 0.0551, Sub_model training time: 13.96min
+RecEraser Sub-model 2, Epoch [231/2000], Runs: 920, Loss: 0.3275, UL AUC: 0.6738, ACC AUC: 0.7776, ACC NDCG@20: 0.0559, Sub_model training time: 14.03min
+RecEraser Sub-model 2, Epoch [232/2000], Runs: 920, Loss: 0.3274, UL AUC: 0.6756, ACC AUC: 0.7774, ACC NDCG@20: 0.0555, Sub_model training time: 14.09min
+RecEraser Sub-model 2, Epoch [233/2000], Runs: 920, Loss: 0.3274, UL AUC: 0.6756, ACC AUC: 0.7772, ACC NDCG@20: 0.0558, Sub_model training time: 14.15min
+RecEraser Sub-model 2, Epoch [234/2000], Runs: 920, Loss: 0.3273, UL AUC: 0.6756, ACC AUC: 0.7769, ACC NDCG@20: 0.0560, Sub_model training time: 14.21min
+RecEraser Sub-model 2, Epoch [235/2000], Runs: 920, Loss: 0.3273, UL AUC: 0.6739, ACC AUC: 0.7770, ACC NDCG@20: 0.0553, Sub_model training time: 14.28min
+RecEraser Sub-model 2, Epoch [236/2000], Runs: 920, Loss: 0.3273, UL AUC: 0.6749, ACC AUC: 0.7769, ACC NDCG@20: 0.0563, Sub_model training time: 14.34min
+RecEraser Sub-model 2, Epoch [237/2000], Runs: 920, Loss: 0.3273, UL AUC: 0.6760, ACC AUC: 0.7771, ACC NDCG@20: 0.0561, Sub_model training time: 14.40min
+RecEraser Sub-model 2, Epoch [238/2000], Runs: 920, Loss: 0.3273, UL AUC: 0.6752, ACC AUC: 0.7774, ACC NDCG@20: 0.0554, Sub_model training time: 14.46min
+RecEraser Sub-model 2, Epoch [239/2000], Runs: 920, Loss: 0.3272, UL AUC: 0.6759, ACC AUC: 0.7771, ACC NDCG@20: 0.0552, Sub_model training time: 14.52min
+RecEraser Sub-model 2, Epoch [240/2000], Runs: 920, Loss: 0.3272, UL AUC: 0.6781, ACC AUC: 0.7774, ACC NDCG@20: 0.0544, Sub_model training time: 14.58min
+RecEraser Sub-model 2, Epoch [241/2000], Runs: 920, Loss: 0.3272, UL AUC: 0.6764, ACC AUC: 0.7776, ACC NDCG@20: 0.0546, Sub_model training time: 14.64min
+RecEraser Sub-model 2, Epoch [242/2000], Runs: 920, Loss: 0.3271, UL AUC: 0.6775, ACC AUC: 0.7775, ACC NDCG@20: 0.0555, Sub_model training time: 14.70min
+RecEraser Sub-model 2, Epoch [243/2000], Runs: 920, Loss: 0.3271, UL AUC: 0.6768, ACC AUC: 0.7776, ACC NDCG@20: 0.0560, Sub_model training time: 14.77min
+RecEraser Sub-model 2, Epoch [244/2000], Runs: 920, Loss: 0.3271, UL AUC: 0.6759, ACC AUC: 0.7773, ACC NDCG@20: 0.0544, Sub_model training time: 14.82min
+RecEraser Sub-model 2, Epoch [245/2000], Runs: 920, Loss: 0.3273, UL AUC: 0.6750, ACC AUC: 0.7773, ACC NDCG@20: 0.0559, Sub_model training time: 14.88min
+RecEraser Sub-model 2, Epoch [246/2000], Runs: 920, Loss: 0.3272, UL AUC: 0.6757, ACC AUC: 0.7771, ACC NDCG@20: 0.0554, Sub_model training time: 14.94min
+RecEraser Sub-model 2, Epoch [247/2000], Runs: 920, Loss: 0.3271, UL AUC: 0.6742, ACC AUC: 0.7770, ACC NDCG@20: 0.0564, Sub_model training time: 15.00min
+RecEraser Sub-model 2, Epoch [248/2000], Runs: 920, Loss: 0.3272, UL AUC: 0.6740, ACC AUC: 0.7772, ACC NDCG@20: 0.0568, Sub_model training time: 15.06min
+RecEraser Sub-model 2, Epoch [249/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6758, ACC AUC: 0.7773, ACC NDCG@20: 0.0555, Sub_model training time: 15.12min
+RecEraser Sub-model 2, Epoch [250/2000], Runs: 920, Loss: 0.3271, UL AUC: 0.6764, ACC AUC: 0.7773, ACC NDCG@20: 0.0569, Sub_model training time: 15.18min
+RecEraser Sub-model 2, Epoch [251/2000], Runs: 920, Loss: 0.3271, UL AUC: 0.6756, ACC AUC: 0.7773, ACC NDCG@20: 0.0560, Sub_model training time: 15.24min
+RecEraser Sub-model 2, Epoch [252/2000], Runs: 920, Loss: 0.3271, UL AUC: 0.6778, ACC AUC: 0.7773, ACC NDCG@20: 0.0551, Sub_model training time: 15.30min
+RecEraser Sub-model 2, Epoch [253/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6766, ACC AUC: 0.7773, ACC NDCG@20: 0.0565, Sub_model training time: 15.36min
+RecEraser Sub-model 2, Epoch [254/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6763, ACC AUC: 0.7774, ACC NDCG@20: 0.0555, Sub_model training time: 15.42min
+RecEraser Sub-model 2, Epoch [255/2000], Runs: 920, Loss: 0.3272, UL AUC: 0.6756, ACC AUC: 0.7770, ACC NDCG@20: 0.0560, Sub_model training time: 15.48min
+RecEraser Sub-model 2, Epoch [256/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6777, ACC AUC: 0.7773, ACC NDCG@20: 0.0562, Sub_model training time: 15.54min
+RecEraser Sub-model 2, Epoch [257/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6778, ACC AUC: 0.7773, ACC NDCG@20: 0.0552, Sub_model training time: 15.61min
+RecEraser Sub-model 2, Epoch [258/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6765, ACC AUC: 0.7773, ACC NDCG@20: 0.0562, Sub_model training time: 15.67min
+RecEraser Sub-model 2, Epoch [259/2000], Runs: 920, Loss: 0.3271, UL AUC: 0.6759, ACC AUC: 0.7774, ACC NDCG@20: 0.0556, Sub_model training time: 15.73min
+RecEraser Sub-model 2, Epoch [260/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6766, ACC AUC: 0.7774, ACC NDCG@20: 0.0556, Sub_model training time: 15.79min
+RecEraser Sub-model 2, Epoch [261/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6773, ACC AUC: 0.7778, ACC NDCG@20: 0.0564, Sub_model training time: 15.85min
+RecEraser Sub-model 2, Epoch [262/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6760, ACC AUC: 0.7774, ACC NDCG@20: 0.0567, Sub_model training time: 15.91min
+RecEraser Sub-model 2, Epoch [263/2000], Runs: 920, Loss: 0.3271, UL AUC: 0.6776, ACC AUC: 0.7775, ACC NDCG@20: 0.0553, Sub_model training time: 15.97min
+RecEraser Sub-model 2, Epoch [264/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6761, ACC AUC: 0.7775, ACC NDCG@20: 0.0557, Sub_model training time: 16.03min
+RecEraser Sub-model 2, Epoch [265/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6767, ACC AUC: 0.7778, ACC NDCG@20: 0.0557, Sub_model training time: 16.09min
+RecEraser Sub-model 2, Epoch [266/2000], Runs: 920, Loss: 0.3271, UL AUC: 0.6764, ACC AUC: 0.7778, ACC NDCG@20: 0.0548, Sub_model training time: 16.15min
+RecEraser Sub-model 2, Epoch [267/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6752, ACC AUC: 0.7777, ACC NDCG@20: 0.0555, Sub_model training time: 16.21min
+RecEraser Sub-model 2, Epoch [268/2000], Runs: 920, Loss: 0.3269, UL AUC: 0.6748, ACC AUC: 0.7779, ACC NDCG@20: 0.0571, Sub_model training time: 16.27min
+RecEraser Sub-model 2, Epoch [269/2000], Runs: 920, Loss: 0.3271, UL AUC: 0.6751, ACC AUC: 0.7779, ACC NDCG@20: 0.0567, Sub_model training time: 16.33min
+RecEraser Sub-model 2, Epoch [270/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6759, ACC AUC: 0.7776, ACC NDCG@20: 0.0551, Sub_model training time: 16.39min
+RecEraser Sub-model 2, Epoch [271/2000], Runs: 920, Loss: 0.3269, UL AUC: 0.6768, ACC AUC: 0.7778, ACC NDCG@20: 0.0559, Sub_model training time: 16.45min
+RecEraser Sub-model 2, Epoch [272/2000], Runs: 920, Loss: 0.3269, UL AUC: 0.6754, ACC AUC: 0.7781, ACC NDCG@20: 0.0563, Sub_model training time: 16.51min
+RecEraser Sub-model 2, Epoch [273/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6769, ACC AUC: 0.7780, ACC NDCG@20: 0.0559, Sub_model training time: 16.57min
+RecEraser Sub-model 2, Epoch [274/2000], Runs: 920, Loss: 0.3270, UL AUC: 0.6769, ACC AUC: 0.7780, ACC NDCG@20: 0.0565, Sub_model training time: 16.63min
+RecEraser Sub-model 2, Epoch [275/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6756, ACC AUC: 0.7779, ACC NDCG@20: 0.0556, Sub_model training time: 16.69min
+RecEraser Sub-model 2, Epoch [276/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6752, ACC AUC: 0.7778, ACC NDCG@20: 0.0556, Sub_model training time: 16.75min
+RecEraser Sub-model 2, Epoch [277/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6741, ACC AUC: 0.7778, ACC NDCG@20: 0.0555, Sub_model training time: 16.81min
+RecEraser Sub-model 2, Epoch [278/2000], Runs: 920, Loss: 0.3269, UL AUC: 0.6734, ACC AUC: 0.7780, ACC NDCG@20: 0.0558, Sub_model training time: 16.87min
+RecEraser Sub-model 2, Epoch [279/2000], Runs: 920, Loss: 0.3269, UL AUC: 0.6741, ACC AUC: 0.7778, ACC NDCG@20: 0.0562, Sub_model training time: 16.93min
+RecEraser Sub-model 2, Epoch [280/2000], Runs: 920, Loss: 0.3269, UL AUC: 0.6747, ACC AUC: 0.7780, ACC NDCG@20: 0.0558, Sub_model training time: 16.98min
+RecEraser Sub-model 2, Epoch [281/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6746, ACC AUC: 0.7780, ACC NDCG@20: 0.0557, Sub_model training time: 17.04min
+RecEraser Sub-model 2, Epoch [282/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6755, ACC AUC: 0.7778, ACC NDCG@20: 0.0558, Sub_model training time: 17.10min
+RecEraser Sub-model 2, Epoch [283/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6755, ACC AUC: 0.7779, ACC NDCG@20: 0.0558, Sub_model training time: 17.17min
+RecEraser Sub-model 2, Epoch [284/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6744, ACC AUC: 0.7782, ACC NDCG@20: 0.0556, Sub_model training time: 17.22min
+RecEraser Sub-model 2, Epoch [285/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6739, ACC AUC: 0.7784, ACC NDCG@20: 0.0561, Sub_model training time: 17.29min
+RecEraser Sub-model 2, Epoch [286/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6760, ACC AUC: 0.7782, ACC NDCG@20: 0.0557, Sub_model training time: 17.34min
+RecEraser Sub-model 2, Epoch [287/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6743, ACC AUC: 0.7781, ACC NDCG@20: 0.0552, Sub_model training time: 17.40min
+RecEraser Sub-model 2, Epoch [288/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6744, ACC AUC: 0.7781, ACC NDCG@20: 0.0557, Sub_model training time: 17.47min
+RecEraser Sub-model 2, Epoch [289/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6756, ACC AUC: 0.7780, ACC NDCG@20: 0.0557, Sub_model training time: 17.53min
+RecEraser Sub-model 2, Epoch [290/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6731, ACC AUC: 0.7780, ACC NDCG@20: 0.0559, Sub_model training time: 17.60min
+RecEraser Sub-model 2, Epoch [291/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6738, ACC AUC: 0.7781, ACC NDCG@20: 0.0560, Sub_model training time: 17.66min
+RecEraser Sub-model 2, Epoch [292/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6738, ACC AUC: 0.7786, ACC NDCG@20: 0.0554, Sub_model training time: 17.72min
+RecEraser Sub-model 2, Epoch [293/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6741, ACC AUC: 0.7782, ACC NDCG@20: 0.0557, Sub_model training time: 17.78min
+RecEraser Sub-model 2, Epoch [294/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6745, ACC AUC: 0.7781, ACC NDCG@20: 0.0556, Sub_model training time: 17.84min
+RecEraser Sub-model 2, Epoch [295/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6746, ACC AUC: 0.7781, ACC NDCG@20: 0.0563, Sub_model training time: 17.90min
+RecEraser Sub-model 2, Epoch [296/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6761, ACC AUC: 0.7780, ACC NDCG@20: 0.0561, Sub_model training time: 17.96min
+RecEraser Sub-model 2, Epoch [297/2000], Runs: 920, Loss: 0.3268, UL AUC: 0.6743, ACC AUC: 0.7781, ACC NDCG@20: 0.0573, Sub_model training time: 18.02min
+RecEraser Sub-model 2, Epoch [298/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6746, ACC AUC: 0.7779, ACC NDCG@20: 0.0569, Sub_model training time: 18.08min
+RecEraser Sub-model 2, Epoch [299/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6735, ACC AUC: 0.7783, ACC NDCG@20: 0.0561, Sub_model training time: 18.14min
+RecEraser Sub-model 2, Epoch [300/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6738, ACC AUC: 0.7784, ACC NDCG@20: 0.0563, Sub_model training time: 18.20min
+RecEraser Sub-model 2, Epoch [301/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6759, ACC AUC: 0.7785, ACC NDCG@20: 0.0563, Sub_model training time: 18.25min
+RecEraser Sub-model 2, Epoch [302/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6745, ACC AUC: 0.7784, ACC NDCG@20: 0.0577, Sub_model training time: 18.32min
+RecEraser Sub-model 2, Epoch [303/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6741, ACC AUC: 0.7787, ACC NDCG@20: 0.0558, Sub_model training time: 18.38min
+RecEraser Sub-model 2, Epoch [304/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6745, ACC AUC: 0.7783, ACC NDCG@20: 0.0570, Sub_model training time: 18.43min
+RecEraser Sub-model 2, Epoch [305/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6750, ACC AUC: 0.7781, ACC NDCG@20: 0.0564, Sub_model training time: 18.49min
+RecEraser Sub-model 2, Epoch [306/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6734, ACC AUC: 0.7779, ACC NDCG@20: 0.0562, Sub_model training time: 18.55min
+RecEraser Sub-model 2, Epoch [307/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6735, ACC AUC: 0.7781, ACC NDCG@20: 0.0560, Sub_model training time: 18.61min
+RecEraser Sub-model 2, Epoch [308/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6731, ACC AUC: 0.7779, ACC NDCG@20: 0.0565, Sub_model training time: 18.67min
+RecEraser Sub-model 2, Epoch [309/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6737, ACC AUC: 0.7782, ACC NDCG@20: 0.0573, Sub_model training time: 18.73min
+RecEraser Sub-model 2, Epoch [310/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6737, ACC AUC: 0.7781, ACC NDCG@20: 0.0564, Sub_model training time: 18.79min
+RecEraser Sub-model 2, Epoch [311/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6748, ACC AUC: 0.7779, ACC NDCG@20: 0.0574, Sub_model training time: 18.85min
+RecEraser Sub-model 2, Epoch [312/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6738, ACC AUC: 0.7782, ACC NDCG@20: 0.0568, Sub_model training time: 18.91min
+RecEraser Sub-model 2, Epoch [313/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6728, ACC AUC: 0.7778, ACC NDCG@20: 0.0577, Sub_model training time: 18.97min
+RecEraser Sub-model 2, Epoch [314/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6733, ACC AUC: 0.7782, ACC NDCG@20: 0.0573, Sub_model training time: 19.03min
+RecEraser Sub-model 2, Epoch [315/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6734, ACC AUC: 0.7780, ACC NDCG@20: 0.0560, Sub_model training time: 19.09min
+RecEraser Sub-model 2, Epoch [316/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6750, ACC AUC: 0.7782, ACC NDCG@20: 0.0571, Sub_model training time: 19.15min
+RecEraser Sub-model 2, Epoch [317/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6732, ACC AUC: 0.7781, ACC NDCG@20: 0.0567, Sub_model training time: 19.21min
+RecEraser Sub-model 2, Epoch [318/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6719, ACC AUC: 0.7780, ACC NDCG@20: 0.0578, Sub_model training time: 19.27min
+RecEraser Sub-model 2, Epoch [319/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6725, ACC AUC: 0.7783, ACC NDCG@20: 0.0566, Sub_model training time: 19.33min
+RecEraser Sub-model 2, Epoch [320/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6714, ACC AUC: 0.7780, ACC NDCG@20: 0.0567, Sub_model training time: 19.39min
+RecEraser Sub-model 2, Epoch [321/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6724, ACC AUC: 0.7780, ACC NDCG@20: 0.0569, Sub_model training time: 19.46min
+RecEraser Sub-model 2, Epoch [322/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6732, ACC AUC: 0.7784, ACC NDCG@20: 0.0564, Sub_model training time: 19.52min
+RecEraser Sub-model 2, Epoch [323/2000], Runs: 920, Loss: 0.3266, UL AUC: 0.6725, ACC AUC: 0.7780, ACC NDCG@20: 0.0575, Sub_model training time: 19.58min
+RecEraser Sub-model 2, Epoch [324/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6734, ACC AUC: 0.7785, ACC NDCG@20: 0.0569, Sub_model training time: 19.63min
+RecEraser Sub-model 2, Epoch [325/2000], Runs: 920, Loss: 0.3267, UL AUC: 0.6740, ACC AUC: 0.7782, ACC NDCG@20: 0.0574, Sub_model training time: 19.70min
+RecEraser Sub-model 2, Epoch [326/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6728, ACC AUC: 0.7781, ACC NDCG@20: 0.0565, Sub_model training time: 19.75min
+RecEraser Sub-model 2, Epoch [327/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6736, ACC AUC: 0.7782, ACC NDCG@20: 0.0570, Sub_model training time: 19.81min
+RecEraser Sub-model 2, Epoch [328/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6752, ACC AUC: 0.7780, ACC NDCG@20: 0.0573, Sub_model training time: 19.88min
+RecEraser Sub-model 2, Epoch [329/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6741, ACC AUC: 0.7782, ACC NDCG@20: 0.0569, Sub_model training time: 19.93min
+RecEraser Sub-model 2, Epoch [330/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6740, ACC AUC: 0.7782, ACC NDCG@20: 0.0574, Sub_model training time: 20.00min
+RecEraser Sub-model 2, Epoch [331/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6737, ACC AUC: 0.7780, ACC NDCG@20: 0.0561, Sub_model training time: 20.06min
+RecEraser Sub-model 2, Epoch [332/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6712, ACC AUC: 0.7781, ACC NDCG@20: 0.0574, Sub_model training time: 20.12min
+RecEraser Sub-model 2, Epoch [333/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6724, ACC AUC: 0.7779, ACC NDCG@20: 0.0570, Sub_model training time: 20.17min
+RecEraser Sub-model 2, Epoch [334/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6723, ACC AUC: 0.7778, ACC NDCG@20: 0.0563, Sub_model training time: 20.24min
+RecEraser Sub-model 2, Epoch [335/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6729, ACC AUC: 0.7779, ACC NDCG@20: 0.0572, Sub_model training time: 20.30min
+RecEraser Sub-model 2, Epoch [336/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6740, ACC AUC: 0.7779, ACC NDCG@20: 0.0575, Sub_model training time: 20.36min
+RecEraser Sub-model 2, Epoch [337/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6732, ACC AUC: 0.7779, ACC NDCG@20: 0.0574, Sub_model training time: 20.42min
+RecEraser Sub-model 2, Epoch [338/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6739, ACC AUC: 0.7780, ACC NDCG@20: 0.0576, Sub_model training time: 20.47min
+RecEraser Sub-model 2, Epoch [339/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6735, ACC AUC: 0.7777, ACC NDCG@20: 0.0573, Sub_model training time: 20.53min
+RecEraser Sub-model 2, Epoch [340/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6734, ACC AUC: 0.7781, ACC NDCG@20: 0.0577, Sub_model training time: 20.60min
+RecEraser Sub-model 2, Epoch [341/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6746, ACC AUC: 0.7781, ACC NDCG@20: 0.0570, Sub_model training time: 20.66min
+RecEraser Sub-model 2, Epoch [342/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6729, ACC AUC: 0.7781, ACC NDCG@20: 0.0571, Sub_model training time: 20.72min
+RecEraser Sub-model 2, Epoch [343/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6726, ACC AUC: 0.7780, ACC NDCG@20: 0.0568, Sub_model training time: 20.78min
+RecEraser Sub-model 2, Epoch [344/2000], Runs: 920, Loss: 0.3265, UL AUC: 0.6729, ACC AUC: 0.7782, ACC NDCG@20: 0.0583, Sub_model training time: 20.84min
+RecEraser Sub-model 2, Epoch [345/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6721, ACC AUC: 0.7783, ACC NDCG@20: 0.0572, Sub_model training time: 20.90min
+RecEraser Sub-model 2, Epoch [346/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6728, ACC AUC: 0.7779, ACC NDCG@20: 0.0568, Sub_model training time: 20.96min
+RecEraser Sub-model 2, Epoch [347/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6725, ACC AUC: 0.7778, ACC NDCG@20: 0.0580, Sub_model training time: 21.02min
+RecEraser Sub-model 2, Epoch [348/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6741, ACC AUC: 0.7781, ACC NDCG@20: 0.0578, Sub_model training time: 21.08min
+RecEraser Sub-model 2, Epoch [349/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6739, ACC AUC: 0.7779, ACC NDCG@20: 0.0574, Sub_model training time: 21.15min
+RecEraser Sub-model 2, Epoch [350/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6729, ACC AUC: 0.7781, ACC NDCG@20: 0.0570, Sub_model training time: 21.21min
+RecEraser Sub-model 2, Epoch [351/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6734, ACC AUC: 0.7780, ACC NDCG@20: 0.0586, Sub_model training time: 21.26min
+RecEraser Sub-model 2, Epoch [352/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6728, ACC AUC: 0.7780, ACC NDCG@20: 0.0585, Sub_model training time: 21.32min
+RecEraser Sub-model 2, Epoch [353/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6723, ACC AUC: 0.7778, ACC NDCG@20: 0.0569, Sub_model training time: 21.38min
+RecEraser Sub-model 2, Epoch [354/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6724, ACC AUC: 0.7777, ACC NDCG@20: 0.0575, Sub_model training time: 21.44min
+RecEraser Sub-model 2, Epoch [355/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6721, ACC AUC: 0.7778, ACC NDCG@20: 0.0571, Sub_model training time: 21.50min
+RecEraser Sub-model 2, Epoch [356/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6716, ACC AUC: 0.7778, ACC NDCG@20: 0.0585, Sub_model training time: 21.56min
+RecEraser Sub-model 2, Epoch [357/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6752, ACC AUC: 0.7781, ACC NDCG@20: 0.0581, Sub_model training time: 21.62min
+RecEraser Sub-model 2, Epoch [358/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6744, ACC AUC: 0.7779, ACC NDCG@20: 0.0581, Sub_model training time: 21.68min
+RecEraser Sub-model 2, Epoch [359/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6740, ACC AUC: 0.7778, ACC NDCG@20: 0.0574, Sub_model training time: 21.74min
+RecEraser Sub-model 2, Epoch [360/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6734, ACC AUC: 0.7779, ACC NDCG@20: 0.0581, Sub_model training time: 21.80min
+RecEraser Sub-model 2, Epoch [361/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6723, ACC AUC: 0.7780, ACC NDCG@20: 0.0589, Sub_model training time: 21.86min
+RecEraser Sub-model 2, Epoch [362/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6744, ACC AUC: 0.7776, ACC NDCG@20: 0.0580, Sub_model training time: 21.92min
+RecEraser Sub-model 2, Epoch [363/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6734, ACC AUC: 0.7777, ACC NDCG@20: 0.0577, Sub_model training time: 21.97min
+RecEraser Sub-model 2, Epoch [364/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6738, ACC AUC: 0.7774, ACC NDCG@20: 0.0583, Sub_model training time: 22.03min
+RecEraser Sub-model 2, Epoch [365/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6741, ACC AUC: 0.7776, ACC NDCG@20: 0.0584, Sub_model training time: 22.09min
+RecEraser Sub-model 2, Epoch [366/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6746, ACC AUC: 0.7775, ACC NDCG@20: 0.0576, Sub_model training time: 22.15min
+RecEraser Sub-model 2, Epoch [367/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6726, ACC AUC: 0.7777, ACC NDCG@20: 0.0581, Sub_model training time: 22.21min
+RecEraser Sub-model 2, Epoch [368/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6720, ACC AUC: 0.7776, ACC NDCG@20: 0.0577, Sub_model training time: 22.27min
+RecEraser Sub-model 2, Epoch [369/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6721, ACC AUC: 0.7776, ACC NDCG@20: 0.0577, Sub_model training time: 22.33min
+RecEraser Sub-model 2, Epoch [370/2000], Runs: 920, Loss: 0.3264, UL AUC: 0.6706, ACC AUC: 0.7780, ACC NDCG@20: 0.0589, Sub_model training time: 22.39min
+RecEraser Sub-model 2, Epoch [371/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6711, ACC AUC: 0.7777, ACC NDCG@20: 0.0582, Sub_model training time: 22.45min
+RecEraser Sub-model 2, Epoch [372/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6712, ACC AUC: 0.7779, ACC NDCG@20: 0.0575, Sub_model training time: 22.51min
+RecEraser Sub-model 2, Epoch [373/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6729, ACC AUC: 0.7780, ACC NDCG@20: 0.0580, Sub_model training time: 22.57min
+RecEraser Sub-model 2, Epoch [374/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6734, ACC AUC: 0.7778, ACC NDCG@20: 0.0573, Sub_model training time: 22.63min
+RecEraser Sub-model 2, Epoch [375/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6732, ACC AUC: 0.7779, ACC NDCG@20: 0.0579, Sub_model training time: 22.69min
+RecEraser Sub-model 2, Epoch [376/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6736, ACC AUC: 0.7778, ACC NDCG@20: 0.0573, Sub_model training time: 22.75min
+RecEraser Sub-model 2, Epoch [377/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6734, ACC AUC: 0.7778, ACC NDCG@20: 0.0566, Sub_model training time: 22.81min
+RecEraser Sub-model 2, Epoch [378/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6736, ACC AUC: 0.7779, ACC NDCG@20: 0.0567, Sub_model training time: 22.88min
+RecEraser Sub-model 2, Epoch [379/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6739, ACC AUC: 0.7777, ACC NDCG@20: 0.0574, Sub_model training time: 22.93min
+RecEraser Sub-model 2, Epoch [380/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6732, ACC AUC: 0.7777, ACC NDCG@20: 0.0573, Sub_model training time: 22.99min
+RecEraser Sub-model 2, Epoch [381/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6722, ACC AUC: 0.7776, ACC NDCG@20: 0.0575, Sub_model training time: 23.05min
+RecEraser Sub-model 2, Epoch [382/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6739, ACC AUC: 0.7776, ACC NDCG@20: 0.0584, Sub_model training time: 23.11min
+RecEraser Sub-model 2, Epoch [383/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6731, ACC AUC: 0.7774, ACC NDCG@20: 0.0575, Sub_model training time: 23.17min
+RecEraser Sub-model 2, Epoch [384/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6742, ACC AUC: 0.7777, ACC NDCG@20: 0.0589, Sub_model training time: 23.23min
+RecEraser Sub-model 2, Epoch [385/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6734, ACC AUC: 0.7778, ACC NDCG@20: 0.0580, Sub_model training time: 23.29min
+RecEraser Sub-model 2, Epoch [386/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6757, ACC AUC: 0.7776, ACC NDCG@20: 0.0583, Sub_model training time: 23.35min
+RecEraser Sub-model 2, Epoch [387/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6741, ACC AUC: 0.7773, ACC NDCG@20: 0.0586, Sub_model training time: 23.41min
+RecEraser Sub-model 2, Epoch [388/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6757, ACC AUC: 0.7777, ACC NDCG@20: 0.0582, Sub_model training time: 23.47min
+RecEraser Sub-model 2, Epoch [389/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6735, ACC AUC: 0.7773, ACC NDCG@20: 0.0583, Sub_model training time: 23.53min
+RecEraser Sub-model 2, Epoch [390/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6774, ACC AUC: 0.7774, ACC NDCG@20: 0.0587, Sub_model training time: 23.59min
+RecEraser Sub-model 2, Epoch [391/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6770, ACC AUC: 0.7773, ACC NDCG@20: 0.0579, Sub_model training time: 23.65min
+RecEraser Sub-model 2, Epoch [392/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6765, ACC AUC: 0.7773, ACC NDCG@20: 0.0580, Sub_model training time: 23.71min
+RecEraser Sub-model 2, Epoch [393/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6769, ACC AUC: 0.7774, ACC NDCG@20: 0.0573, Sub_model training time: 23.77min
+RecEraser Sub-model 2, Epoch [394/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6761, ACC AUC: 0.7774, ACC NDCG@20: 0.0570, Sub_model training time: 23.83min
+RecEraser Sub-model 2, Epoch [395/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6770, ACC AUC: 0.7773, ACC NDCG@20: 0.0571, Sub_model training time: 23.89min
+RecEraser Sub-model 2, Epoch [396/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6760, ACC AUC: 0.7776, ACC NDCG@20: 0.0581, Sub_model training time: 23.95min
+RecEraser Sub-model 2, Epoch [397/2000], Runs: 920, Loss: 0.3263, UL AUC: 0.6759, ACC AUC: 0.7774, ACC NDCG@20: 0.0576, Sub_model training time: 24.01min
+RecEraser Sub-model 2, Epoch [398/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6758, ACC AUC: 0.7778, ACC NDCG@20: 0.0581, Sub_model training time: 24.07min
+RecEraser Sub-model 2, Epoch [399/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6754, ACC AUC: 0.7774, ACC NDCG@20: 0.0579, Sub_model training time: 24.13min
+RecEraser Sub-model 2, Epoch [400/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6767, ACC AUC: 0.7777, ACC NDCG@20: 0.0577, Sub_model training time: 24.19min
+RecEraser Sub-model 2, Epoch [401/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6760, ACC AUC: 0.7779, ACC NDCG@20: 0.0576, Sub_model training time: 24.25min
+RecEraser Sub-model 2, Epoch [402/2000], Runs: 920, Loss: 0.3261, UL AUC: 0.6752, ACC AUC: 0.7779, ACC NDCG@20: 0.0580, Sub_model training time: 24.31min
+RecEraser Sub-model 2, Epoch [403/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6750, ACC AUC: 0.7781, ACC NDCG@20: 0.0580, Sub_model training time: 24.37min
+RecEraser Sub-model 2, Epoch [404/2000], Runs: 920, Loss: 0.3261, UL AUC: 0.6746, ACC AUC: 0.7782, ACC NDCG@20: 0.0578, Sub_model training time: 24.43min
+RecEraser Sub-model 2, Epoch [405/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6751, ACC AUC: 0.7780, ACC NDCG@20: 0.0587, Sub_model training time: 24.49min
+RecEraser Sub-model 2, Epoch [406/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6745, ACC AUC: 0.7779, ACC NDCG@20: 0.0582, Sub_model training time: 24.55min
+RecEraser Sub-model 2, Epoch [407/2000], Runs: 920, Loss: 0.3261, UL AUC: 0.6738, ACC AUC: 0.7781, ACC NDCG@20: 0.0581, Sub_model training time: 24.61min
+RecEraser Sub-model 2, Epoch [408/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6735, ACC AUC: 0.7776, ACC NDCG@20: 0.0573, Sub_model training time: 24.67min
+RecEraser Sub-model 2, Epoch [409/2000], Runs: 920, Loss: 0.3261, UL AUC: 0.6754, ACC AUC: 0.7777, ACC NDCG@20: 0.0584, Sub_model training time: 24.73min
+RecEraser Sub-model 2, Epoch [410/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6746, ACC AUC: 0.7775, ACC NDCG@20: 0.0576, Sub_model training time: 24.79min
+RecEraser Sub-model 2, Epoch [411/2000], Runs: 920, Loss: 0.3261, UL AUC: 0.6729, ACC AUC: 0.7778, ACC NDCG@20: 0.0574, Sub_model training time: 24.85min
+RecEraser Sub-model 2, Epoch [412/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6733, ACC AUC: 0.7776, ACC NDCG@20: 0.0577, Sub_model training time: 24.91min
+RecEraser Sub-model 2, Epoch [413/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6744, ACC AUC: 0.7781, ACC NDCG@20: 0.0573, Sub_model training time: 24.97min
+RecEraser Sub-model 2, Epoch [414/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6731, ACC AUC: 0.7781, ACC NDCG@20: 0.0575, Sub_model training time: 25.03min
+RecEraser Sub-model 2, Epoch [415/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6734, ACC AUC: 0.7781, ACC NDCG@20: 0.0578, Sub_model training time: 25.09min
+RecEraser Sub-model 2, Epoch [416/2000], Runs: 920, Loss: 0.3261, UL AUC: 0.6744, ACC AUC: 0.7778, ACC NDCG@20: 0.0580, Sub_model training time: 25.15min
+RecEraser Sub-model 2, Epoch [417/2000], Runs: 920, Loss: 0.3261, UL AUC: 0.6751, ACC AUC: 0.7779, ACC NDCG@20: 0.0579, Sub_model training time: 25.21min
+RecEraser Sub-model 2, Epoch [418/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6737, ACC AUC: 0.7781, ACC NDCG@20: 0.0574, Sub_model training time: 25.28min
+RecEraser Sub-model 2, Epoch [419/2000], Runs: 920, Loss: 0.3262, UL AUC: 0.6749, ACC AUC: 0.7781, ACC NDCG@20: 0.0586, Sub_model training time: 25.33min
+RecEraser Sub-model 2, Epoch [420/2000], Runs: 920, Loss: 0.3261, UL AUC: 0.6760, ACC AUC: 0.7778, ACC NDCG@20: 0.0582, Sub_model training time: 25.39min
+[RecEraser] FINISH training SUB_MODELS, current time: 29.97min.
+[RecEraser] START training ATTENTION layer, current time: 29.97min.
+Made new dir!
+RecEraser Attention Layer Training. Epoch [1/2000], Runs: 523 Loss: 0.1802, UL AUC: 0.6622, ACC AUC: 0.8027, ACC NDCG@20: 0.0285, Attention layer training time: 0.09min
+RecEraser Attention Layer Training. Epoch [2/2000], Runs: 523 Loss: 0.1709, UL AUC: 0.6572, ACC AUC: 0.8030, ACC NDCG@20: 0.0263, Attention layer training time: 0.17min
+RecEraser Attention Layer Training. Epoch [3/2000], Runs: 523 Loss: 0.1681, UL AUC: 0.6625, ACC AUC: 0.8110, ACC NDCG@20: 0.0295, Attention layer training time: 0.26min
+RecEraser Attention Layer Training. Epoch [4/2000], Runs: 523 Loss: 0.1679, UL AUC: 0.6641, ACC AUC: 0.8063, ACC NDCG@20: 0.0306, Attention layer training time: 0.35min
+RecEraser Attention Layer Training. Epoch [5/2000], Runs: 523 Loss: 0.1670, UL AUC: 0.6644, ACC AUC: 0.8078, ACC NDCG@20: 0.0304, Attention layer training time: 0.43min
+RecEraser Attention Layer Training. Epoch [6/2000], Runs: 523 Loss: 0.1670, UL AUC: 0.6585, ACC AUC: 0.8058, ACC NDCG@20: 0.0288, Attention layer training time: 0.51min
+RecEraser Attention Layer Training. Epoch [7/2000], Runs: 523 Loss: 0.1662, UL AUC: 0.6569, ACC AUC: 0.8132, ACC NDCG@20: 0.0284, Attention layer training time: 0.60min
+RecEraser Attention Layer Training. Epoch [8/2000], Runs: 523 Loss: 0.1654, UL AUC: 0.6613, ACC AUC: 0.8105, ACC NDCG@20: 0.0301, Attention layer training time: 0.68min
+RecEraser Attention Layer Training. Epoch [9/2000], Runs: 523 Loss: 0.1646, UL AUC: 0.6554, ACC AUC: 0.8069, ACC NDCG@20: 0.0278, Attention layer training time: 0.77min
+RecEraser Attention Layer Training. Epoch [10/2000], Runs: 523 Loss: 0.1657, UL AUC: 0.6603, ACC AUC: 0.8076, ACC NDCG@20: 0.0295, Attention layer training time: 0.85min
+RecEraser Attention Layer Training. Epoch [11/2000], Runs: 523 Loss: 0.1651, UL AUC: 0.6638, ACC AUC: 0.8098, ACC NDCG@20: 0.0307, Attention layer training time: 0.94min
+RecEraser Attention Layer Training. Epoch [12/2000], Runs: 523 Loss: 0.1640, UL AUC: 0.6636, ACC AUC: 0.8120, ACC NDCG@20: 0.0302, Attention layer training time: 1.02min
+RecEraser Attention Layer Training. Epoch [13/2000], Runs: 523 Loss: 0.1638, UL AUC: 0.6615, ACC AUC: 0.8109, ACC NDCG@20: 0.0296, Attention layer training time: 1.11min
+RecEraser Attention Layer Training. Epoch [14/2000], Runs: 523 Loss: 0.1634, UL AUC: 0.6609, ACC AUC: 0.8130, ACC NDCG@20: 0.0294, Attention layer training time: 1.19min
+RecEraser Attention Layer Training. Epoch [15/2000], Runs: 523 Loss: 0.1631, UL AUC: 0.6599, ACC AUC: 0.8073, ACC NDCG@20: 0.0277, Attention layer training time: 1.27min
+RecEraser Attention Layer Training. Epoch [16/2000], Runs: 523 Loss: 0.1631, UL AUC: 0.6596, ACC AUC: 0.8103, ACC NDCG@20: 0.0290, Attention layer training time: 1.36min
+RecEraser Attention Layer Training. Epoch [17/2000], Runs: 523 Loss: 0.1626, UL AUC: 0.6601, ACC AUC: 0.8120, ACC NDCG@20: 0.0295, Attention layer training time: 1.44min
+RecEraser Attention Layer Training. Epoch [18/2000], Runs: 523 Loss: 0.1619, UL AUC: 0.6617, ACC AUC: 0.8116, ACC NDCG@20: 0.0299, Attention layer training time: 1.52min
+RecEraser Attention Layer Training. Epoch [19/2000], Runs: 523 Loss: 0.1633, UL AUC: 0.6555, ACC AUC: 0.8084, ACC NDCG@20: 0.0275, Attention layer training time: 1.61min
+RecEraser Attention Layer Training. Epoch [20/2000], Runs: 523 Loss: 0.1628, UL AUC: 0.6591, ACC AUC: 0.8088, ACC NDCG@20: 0.0286, Attention layer training time: 1.69min
+RecEraser Attention Layer Training. Epoch [21/2000], Runs: 523 Loss: 0.1633, UL AUC: 0.6624, ACC AUC: 0.8126, ACC NDCG@20: 0.0305, Attention layer training time: 1.78min
+RecEraser Attention Layer Training. Epoch [22/2000], Runs: 523 Loss: 0.1626, UL AUC: 0.6547, ACC AUC: 0.8121, ACC NDCG@20: 0.0283, Attention layer training time: 1.86min
+RecEraser Attention Layer Training. Epoch [23/2000], Runs: 523 Loss: 0.1612, UL AUC: 0.6601, ACC AUC: 0.8107, ACC NDCG@20: 0.0293, Attention layer training time: 1.94min
+RecEraser Attention Layer Training. Epoch [24/2000], Runs: 523 Loss: 0.1622, UL AUC: 0.6630, ACC AUC: 0.8115, ACC NDCG@20: 0.0301, Attention layer training time: 2.03min
+RecEraser Attention Layer Training. Epoch [25/2000], Runs: 523 Loss: 0.1630, UL AUC: 0.6608, ACC AUC: 0.8104, ACC NDCG@20: 0.0291, Attention layer training time: 2.11min
+RecEraser Attention Layer Training. Epoch [26/2000], Runs: 523 Loss: 0.1619, UL AUC: 0.6621, ACC AUC: 0.8126, ACC NDCG@20: 0.0299, Attention layer training time: 2.19min
+RecEraser Attention Layer Training. Epoch [27/2000], Runs: 523 Loss: 0.1609, UL AUC: 0.6635, ACC AUC: 0.8102, ACC NDCG@20: 0.0304, Attention layer training time: 2.28min
+RecEraser Attention Layer Training. Epoch [28/2000], Runs: 523 Loss: 0.1617, UL AUC: 0.6571, ACC AUC: 0.8101, ACC NDCG@20: 0.0276, Attention layer training time: 2.36min
+RecEraser Attention Layer Training. Epoch [29/2000], Runs: 523 Loss: 0.1605, UL AUC: 0.6623, ACC AUC: 0.8137, ACC NDCG@20: 0.0304, Attention layer training time: 2.44min
+RecEraser Attention Layer Training. Epoch [30/2000], Runs: 523 Loss: 0.1614, UL AUC: 0.6561, ACC AUC: 0.8107, ACC NDCG@20: 0.0289, Attention layer training time: 2.53min
+RecEraser Attention Layer Training. Epoch [31/2000], Runs: 523 Loss: 0.1616, UL AUC: 0.6589, ACC AUC: 0.8096, ACC NDCG@20: 0.0290, Attention layer training time: 2.61min
+RecEraser Attention Layer Training. Epoch [32/2000], Runs: 523 Loss: 0.1602, UL AUC: 0.6683, ACC AUC: 0.8156, ACC NDCG@20: 0.0325, Attention layer training time: 2.70min
+RecEraser Attention Layer Training. Epoch [33/2000], Runs: 523 Loss: 0.1608, UL AUC: 0.6574, ACC AUC: 0.8109, ACC NDCG@20: 0.0281, Attention layer training time: 2.78min
+RecEraser Attention Layer Training. Epoch [34/2000], Runs: 523 Loss: 0.1602, UL AUC: 0.6619, ACC AUC: 0.8112, ACC NDCG@20: 0.0293, Attention layer training time: 2.86min
+RecEraser Attention Layer Training. Epoch [35/2000], Runs: 523 Loss: 0.1612, UL AUC: 0.6588, ACC AUC: 0.8122, ACC NDCG@20: 0.0279, Attention layer training time: 2.94min
+RecEraser Attention Layer Training. Epoch [36/2000], Runs: 523 Loss: 0.1596, UL AUC: 0.6660, ACC AUC: 0.8111, ACC NDCG@20: 0.0298, Attention layer training time: 3.03min
+RecEraser Attention Layer Training. Epoch [37/2000], Runs: 523 Loss: 0.1609, UL AUC: 0.6635, ACC AUC: 0.8119, ACC NDCG@20: 0.0306, Attention layer training time: 3.11min
+RecEraser Attention Layer Training. Epoch [38/2000], Runs: 523 Loss: 0.1603, UL AUC: 0.6644, ACC AUC: 0.8112, ACC NDCG@20: 0.0299, Attention layer training time: 3.20min
+RecEraser Attention Layer Training. Epoch [39/2000], Runs: 523 Loss: 0.1601, UL AUC: 0.6552, ACC AUC: 0.8081, ACC NDCG@20: 0.0271, Attention layer training time: 3.28min
+RecEraser Attention Layer Training. Epoch [40/2000], Runs: 523 Loss: 0.1607, UL AUC: 0.6619, ACC AUC: 0.8094, ACC NDCG@20: 0.0297, Attention layer training time: 3.36min
+RecEraser Attention Layer Training. Epoch [41/2000], Runs: 523 Loss: 0.1594, UL AUC: 0.6605, ACC AUC: 0.8115, ACC NDCG@20: 0.0296, Attention layer training time: 3.44min
+RecEraser Attention Layer Training. Epoch [42/2000], Runs: 523 Loss: 0.1587, UL AUC: 0.6669, ACC AUC: 0.8108, ACC NDCG@20: 0.0311, Attention layer training time: 3.52min
+RecEraser Attention Layer Training. Epoch [43/2000], Runs: 523 Loss: 0.1597, UL AUC: 0.6622, ACC AUC: 0.8131, ACC NDCG@20: 0.0302, Attention layer training time: 3.61min
+RecEraser Attention Layer Training. Epoch [44/2000], Runs: 523 Loss: 0.1594, UL AUC: 0.6612, ACC AUC: 0.8093, ACC NDCG@20: 0.0288, Attention layer training time: 3.69min
+RecEraser Attention Layer Training. Epoch [45/2000], Runs: 523 Loss: 0.1582, UL AUC: 0.6582, ACC AUC: 0.8107, ACC NDCG@20: 0.0283, Attention layer training time: 3.77min
+RecEraser Attention Layer Training. Epoch [46/2000], Runs: 523 Loss: 0.1595, UL AUC: 0.6591, ACC AUC: 0.8113, ACC NDCG@20: 0.0293, Attention layer training time: 3.86min
+RecEraser Attention Layer Training. Epoch [47/2000], Runs: 523 Loss: 0.1590, UL AUC: 0.6603, ACC AUC: 0.8106, ACC NDCG@20: 0.0297, Attention layer training time: 3.94min
+RecEraser Attention Layer Training. Epoch [48/2000], Runs: 523 Loss: 0.1597, UL AUC: 0.6633, ACC AUC: 0.8124, ACC NDCG@20: 0.0305, Attention layer training time: 4.02min
+RecEraser Attention Layer Training. Epoch [49/2000], Runs: 523 Loss: 0.1599, UL AUC: 0.6602, ACC AUC: 0.8102, ACC NDCG@20: 0.0287, Attention layer training time: 4.10min
+RecEraser Attention Layer Training. Epoch [50/2000], Runs: 523 Loss: 0.1603, UL AUC: 0.6597, ACC AUC: 0.8101, ACC NDCG@20: 0.0281, Attention layer training time: 4.18min
+RecEraser Attention Layer Training. Epoch [51/2000], Runs: 523 Loss: 0.1592, UL AUC: 0.6650, ACC AUC: 0.8149, ACC NDCG@20: 0.0307, Attention layer training time: 4.26min
+RecEraser Attention Layer Training. Epoch [52/2000], Runs: 523 Loss: 0.1592, UL AUC: 0.6620, ACC AUC: 0.8129, ACC NDCG@20: 0.0304, Attention layer training time: 4.35min
+RecEraser Attention Layer Training. Epoch [53/2000], Runs: 523 Loss: 0.1576, UL AUC: 0.6632, ACC AUC: 0.8136, ACC NDCG@20: 0.0301, Attention layer training time: 4.43min
+RecEraser Attention Layer Training. Epoch [54/2000], Runs: 523 Loss: 0.1594, UL AUC: 0.6615, ACC AUC: 0.8132, ACC NDCG@20: 0.0300, Attention layer training time: 4.51min
+RecEraser Attention Layer Training. Epoch [55/2000], Runs: 523 Loss: 0.1588, UL AUC: 0.6600, ACC AUC: 0.8097, ACC NDCG@20: 0.0269, Attention layer training time: 4.60min
+RecEraser Attention Layer Training. Epoch [56/2000], Runs: 523 Loss: 0.1583, UL AUC: 0.6603, ACC AUC: 0.8140, ACC NDCG@20: 0.0293, Attention layer training time: 4.68min
+RecEraser Attention Layer Training. Epoch [57/2000], Runs: 523 Loss: 0.1592, UL AUC: 0.6659, ACC AUC: 0.8133, ACC NDCG@20: 0.0310, Attention layer training time: 4.76min
+[RecEraser] FINISH training ATTENTION layer, current time: 34.81min.
+TOTAL RUNNING TIME: 34.81min
+Precision@20: 0.0142; Recall@20: 0.0483;  NDCG@20: 0.0325;  
+Precision@50: 0.0117; Recall@50: 0.0971;  NDCG@50: 0.0483;  
+Precision@100: 0.0095; Recall@100: 0.1567;  NDCG@100: 0.0648;  
+Before unlearning: ACC AUC: 0.8977, UL AUC: 0.4954, ACC NDCG@20: 0.0814
+After unlearning: ACC AUC: 0.8156, UL AUC: 0.6683, ACC NDCG@20: 0.0325

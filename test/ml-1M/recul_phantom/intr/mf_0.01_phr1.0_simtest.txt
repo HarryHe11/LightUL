@@ -1,0 +1,12 @@
+Read ml-1M dataset done! u_num: 6040, i_num: 3883
+Load a pre-trained model
+ UL AUC before unlearning: 0.5083
+ACC AUC before unlearning: 0.8614
+NDCG@20 before unlearning: 0.2260
+Precision@20: 0.2119; Recall@20: 0.1413;  NDCG@20: 0.2261;  
+Precision@50: 0.1698; Recall@50: 0.2830;  NDCG@50: 0.2652;  
+Precision@100: 0.1286; Recall@100: 0.4289;  NDCG@100: 0.3425;  
+Before unlearning: ACC AUC: 0.8614, UL AUC: 0.5083, ACC NDCG@20: 0.2260
+After unlearning: ACC AUC: 0.7791, UL AUC: 0.7956, ACC NDCG@20: 0.2261
+Load a re-train model
+Jar_Sim@20: 0.2091;  Jar_Sim@50: 0.2811;  Jar_Sim@100: 0.3126;  

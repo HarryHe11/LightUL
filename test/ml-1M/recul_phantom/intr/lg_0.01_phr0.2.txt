@@ -1,0 +1,123 @@
+Read ml-1M dataset done! u_num: 6040, i_num: 3883
+Load a pre-trained model
+UL AUC before unlearning: 0.4898
+ACC AUC before unlearning: 0.9108
+NDCG@20 before unlearning: 0.2855
+Start phantom user assignment k-means!
+Finish phantom user assignment k-means!
+AUC before unlearning: 0.5787
+NDCG@20 before unlearning: 0.2828
+[RECUL] START TRAINING. CURRENT TIME: 0.38min.
+[RECUL] PREPROCESS FINISHED. CURRENT TIME: 0.03min.
+[RecUL] Epoch [1/2000], Loss: 2.2441, UL AUC: 0.4376, ACC AUC: 0.6920, ACC NDCG@20: 0.2889, Current time: 0.28min
+[RecUL] Epoch [2/2000], Loss: 2.0642, UL AUC: 0.4470, ACC AUC: 0.7192, ACC NDCG@20: 0.2898, Current time: 0.53min
+[RecUL] Epoch [3/2000], Loss: 1.9817, UL AUC: 0.4376, ACC AUC: 0.7508, ACC NDCG@20: 0.2898, Current time: 0.78min
+[RecUL] Epoch [4/2000], Loss: 1.9497, UL AUC: 0.4477, ACC AUC: 0.7673, ACC NDCG@20: 0.2896, Current time: 0.86min
+[RecUL] Epoch [5/2000], Loss: 1.8151, UL AUC: 0.4519, ACC AUC: 0.7745, ACC NDCG@20: 0.2909, Current time: 1.12min
+[RecUL] Epoch [6/2000], Loss: 1.8425, UL AUC: 0.4677, ACC AUC: 0.7829, ACC NDCG@20: 0.2909, Current time: 1.36min
+[RecUL] Epoch [7/2000], Loss: 1.7801, UL AUC: 0.4780, ACC AUC: 0.7911, ACC NDCG@20: 0.2917, Current time: 1.51min
+[RecUL] Epoch [8/2000], Loss: 1.7439, UL AUC: 0.4810, ACC AUC: 0.8011, ACC NDCG@20: 0.2911, Current time: 1.77min
+[RecUL] Epoch [9/2000], Loss: 1.7215, UL AUC: 0.4745, ACC AUC: 0.8127, ACC NDCG@20: 0.2891, Current time: 2.01min
+[RecUL] Epoch [10/2000], Loss: 1.7067, UL AUC: 0.4925, ACC AUC: 0.8139, ACC NDCG@20: 0.2880, Current time: 2.13min
+[RecUL] Epoch [11/2000], Loss: 1.7208, UL AUC: 0.4933, ACC AUC: 0.8203, ACC NDCG@20: 0.2869, Current time: 2.32min
+[RecUL] Epoch [12/2000], Loss: 1.7053, UL AUC: 0.4951, ACC AUC: 0.8285, ACC NDCG@20: 0.2856, Current time: 2.58min
+[RecUL] Epoch [13/2000], Loss: 1.6516, UL AUC: 0.5061, ACC AUC: 0.8331, ACC NDCG@20: 0.2839, Current time: 2.82min
+[RecUL] Epoch [14/2000], Loss: 1.6131, UL AUC: 0.5277, ACC AUC: 0.8371, ACC NDCG@20: 0.2853, Current time: 3.08min
+[RecUL] Epoch [15/2000], Loss: 1.6225, UL AUC: 0.5243, ACC AUC: 0.8423, ACC NDCG@20: 0.2863, Current time: 3.32min
+[RecUL] Epoch [16/2000], Loss: 1.5985, UL AUC: 0.5194, ACC AUC: 0.8415, ACC NDCG@20: 0.2845, Current time: 3.57min
+[RecUL] Epoch [17/2000], Loss: 1.5975, UL AUC: 0.5229, ACC AUC: 0.8462, ACC NDCG@20: 0.2836, Current time: 3.63min
+[RecUL] Epoch [18/2000], Loss: 1.5766, UL AUC: 0.5345, ACC AUC: 0.8475, ACC NDCG@20: 0.2845, Current time: 3.82min
+[RecUL] Epoch [19/2000], Loss: 1.5622, UL AUC: 0.5433, ACC AUC: 0.8464, ACC NDCG@20: 0.2856, Current time: 4.07min
+[RecUL] Epoch [20/2000], Loss: 1.5215, UL AUC: 0.5685, ACC AUC: 0.8518, ACC NDCG@20: 0.2850, Current time: 4.31min
+[RecUL] Epoch [21/2000], Loss: 1.5774, UL AUC: 0.5635, ACC AUC: 0.8578, ACC NDCG@20: 0.2849, Current time: 4.56min
+[RecUL] Epoch [22/2000], Loss: 1.5499, UL AUC: 0.5751, ACC AUC: 0.8553, ACC NDCG@20: 0.2858, Current time: 4.81min
+[RecUL] Epoch [23/2000], Loss: 1.4945, UL AUC: 0.5680, ACC AUC: 0.8614, ACC NDCG@20: 0.2862, Current time: 5.02min
+[RecUL] Epoch [24/2000], Loss: 1.5355, UL AUC: 0.5822, ACC AUC: 0.8603, ACC NDCG@20: 0.2873, Current time: 5.27min
+[RecUL] Epoch [25/2000], Loss: 1.5309, UL AUC: 0.6047, ACC AUC: 0.8575, ACC NDCG@20: 0.2869, Current time: 5.52min
+[RecUL] Epoch [26/2000], Loss: 1.5015, UL AUC: 0.5884, ACC AUC: 0.8577, ACC NDCG@20: 0.2866, Current time: 5.60min
+[RecUL] Epoch [27/2000], Loss: 1.4921, UL AUC: 0.6024, ACC AUC: 0.8617, ACC NDCG@20: 0.2856, Current time: 5.85min
+[RecUL] Epoch [28/2000], Loss: 1.4665, UL AUC: 0.5849, ACC AUC: 0.8661, ACC NDCG@20: 0.2865, Current time: 6.10min
+[RecUL] Epoch [29/2000], Loss: 1.4459, UL AUC: 0.5844, ACC AUC: 0.8676, ACC NDCG@20: 0.2862, Current time: 6.35min
+[RecUL] Epoch [30/2000], Loss: 1.4555, UL AUC: 0.5933, ACC AUC: 0.8624, ACC NDCG@20: 0.2871, Current time: 6.55min
+[RecUL] Epoch [31/2000], Loss: 1.4075, UL AUC: 0.5965, ACC AUC: 0.8612, ACC NDCG@20: 0.2883, Current time: 6.80min
+[RecUL] Epoch [32/2000], Loss: 1.4475, UL AUC: 0.6155, ACC AUC: 0.8644, ACC NDCG@20: 0.2873, Current time: 7.00min
+[RecUL] Epoch [33/2000], Loss: 1.4225, UL AUC: 0.6069, ACC AUC: 0.8647, ACC NDCG@20: 0.2862, Current time: 7.18min
+[RecUL] Epoch [34/2000], Loss: 1.4016, UL AUC: 0.6094, ACC AUC: 0.8638, ACC NDCG@20: 0.2855, Current time: 7.43min
+[RecUL] Epoch [35/2000], Loss: 1.4132, UL AUC: 0.6133, ACC AUC: 0.8644, ACC NDCG@20: 0.2855, Current time: 7.68min
+[RecUL] Epoch [36/2000], Loss: 1.3944, UL AUC: 0.6246, ACC AUC: 0.8685, ACC NDCG@20: 0.2866, Current time: 7.89min
+[RecUL] Epoch [37/2000], Loss: 1.3806, UL AUC: 0.6281, ACC AUC: 0.8665, ACC NDCG@20: 0.2873, Current time: 8.14min
+[RecUL] Epoch [38/2000], Loss: 1.3775, UL AUC: 0.6340, ACC AUC: 0.8655, ACC NDCG@20: 0.2859, Current time: 8.39min
+[RecUL] Epoch [39/2000], Loss: 1.3828, UL AUC: 0.6195, ACC AUC: 0.8678, ACC NDCG@20: 0.2846, Current time: 8.45min
+[RecUL] Epoch [40/2000], Loss: 1.3370, UL AUC: 0.6103, ACC AUC: 0.8650, ACC NDCG@20: 0.2839, Current time: 8.63min
+[RecUL] Epoch [41/2000], Loss: 1.3495, UL AUC: 0.6215, ACC AUC: 0.8683, ACC NDCG@20: 0.2836, Current time: 8.88min
+[RecUL] Epoch [42/2000], Loss: 1.3228, UL AUC: 0.6185, ACC AUC: 0.8705, ACC NDCG@20: 0.2840, Current time: 9.13min
+[RecUL] Epoch [43/2000], Loss: 1.3487, UL AUC: 0.6249, ACC AUC: 0.8659, ACC NDCG@20: 0.2837, Current time: 9.38min
+[RecUL] Epoch [44/2000], Loss: 1.3673, UL AUC: 0.6459, ACC AUC: 0.8660, ACC NDCG@20: 0.2834, Current time: 9.62min
+[RecUL] Epoch [45/2000], Loss: 1.3021, UL AUC: 0.6506, ACC AUC: 0.8634, ACC NDCG@20: 0.2828, Current time: 9.88min
+[RecUL] Epoch [46/2000], Loss: 1.3414, UL AUC: 0.6550, ACC AUC: 0.8631, ACC NDCG@20: 0.2828, Current time: 9.99min
+[RecUL] Epoch [47/2000], Loss: 1.2768, UL AUC: 0.6527, ACC AUC: 0.8704, ACC NDCG@20: 0.2830, Current time: 10.24min
+[RecUL] Epoch [48/2000], Loss: 1.3131, UL AUC: 0.6409, ACC AUC: 0.8697, ACC NDCG@20: 0.2831, Current time: 10.38min
+[RecUL] Epoch [49/2000], Loss: 1.2960, UL AUC: 0.6651, ACC AUC: 0.8684, ACC NDCG@20: 0.2822, Current time: 10.64min
+[RecUL] Epoch [50/2000], Loss: 1.3079, UL AUC: 0.6436, ACC AUC: 0.8716, ACC NDCG@20: 0.2817, Current time: 10.89min
+[RecUL] Epoch [51/2000], Loss: 1.2858, UL AUC: 0.6467, ACC AUC: 0.8715, ACC NDCG@20: 0.2811, Current time: 11.14min
+[RecUL] Epoch [52/2000], Loss: 1.2714, UL AUC: 0.6693, ACC AUC: 0.8637, ACC NDCG@20: 0.2806, Current time: 11.26min
+[RecUL] Epoch [53/2000], Loss: 1.2647, UL AUC: 0.6885, ACC AUC: 0.8648, ACC NDCG@20: 0.2800, Current time: 11.51min
+[RecUL] Epoch [54/2000], Loss: 1.2399, UL AUC: 0.6756, ACC AUC: 0.8649, ACC NDCG@20: 0.2791, Current time: 11.76min
+[RecUL] Epoch [55/2000], Loss: 1.2905, UL AUC: 0.6876, ACC AUC: 0.8663, ACC NDCG@20: 0.2786, Current time: 11.97min
+[RecUL] Epoch [56/2000], Loss: 1.2651, UL AUC: 0.6686, ACC AUC: 0.8651, ACC NDCG@20: 0.2781, Current time: 12.22min
+[RecUL] Epoch [57/2000], Loss: 1.2510, UL AUC: 0.6613, ACC AUC: 0.8688, ACC NDCG@20: 0.2772, Current time: 12.47min
+[RecUL] Epoch [58/2000], Loss: 1.2433, UL AUC: 0.6669, ACC AUC: 0.8691, ACC NDCG@20: 0.2765, Current time: 12.72min
+[RecUL] Epoch [59/2000], Loss: 1.2170, UL AUC: 0.6719, ACC AUC: 0.8676, ACC NDCG@20: 0.2767, Current time: 12.86min
+[RecUL] Epoch [60/2000], Loss: 1.2175, UL AUC: 0.6993, ACC AUC: 0.8668, ACC NDCG@20: 0.2773, Current time: 13.12min
+[RecUL] Epoch [61/2000], Loss: 1.2191, UL AUC: 0.7039, ACC AUC: 0.8662, ACC NDCG@20: 0.2784, Current time: 13.39min
+[RecUL] Epoch [62/2000], Loss: 1.2493, UL AUC: 0.7077, ACC AUC: 0.8639, ACC NDCG@20: 0.2786, Current time: 13.64min
+[RecUL] Epoch [63/2000], Loss: 1.1888, UL AUC: 0.6847, ACC AUC: 0.8670, ACC NDCG@20: 0.2787, Current time: 13.91min
+[RecUL] Epoch [64/2000], Loss: 1.2057, UL AUC: 0.6897, ACC AUC: 0.8669, ACC NDCG@20: 0.2780, Current time: 14.17min
+[RecUL] Epoch [65/2000], Loss: 1.2058, UL AUC: 0.7051, ACC AUC: 0.8640, ACC NDCG@20: 0.2770, Current time: 14.43min
+[RecUL] Epoch [66/2000], Loss: 1.1768, UL AUC: 0.7117, ACC AUC: 0.8652, ACC NDCG@20: 0.2762, Current time: 14.69min
+[RecUL] Epoch [67/2000], Loss: 1.2209, UL AUC: 0.6825, ACC AUC: 0.8712, ACC NDCG@20: 0.2759, Current time: 14.89min
+[RecUL] Epoch [68/2000], Loss: 1.1614, UL AUC: 0.7274, ACC AUC: 0.8662, ACC NDCG@20: 0.2761, Current time: 15.05min
+[RecUL] Epoch [69/2000], Loss: 1.1382, UL AUC: 0.6927, ACC AUC: 0.8696, ACC NDCG@20: 0.2761, Current time: 15.31min
+[RecUL] Epoch [70/2000], Loss: 1.1654, UL AUC: 0.7033, ACC AUC: 0.8702, ACC NDCG@20: 0.2758, Current time: 15.55min
+[RecUL] Epoch [71/2000], Loss: 1.1689, UL AUC: 0.6964, ACC AUC: 0.8744, ACC NDCG@20: 0.2759, Current time: 15.80min
+[RecUL] Epoch [72/2000], Loss: 1.1407, UL AUC: 0.7053, ACC AUC: 0.8726, ACC NDCG@20: 0.2759, Current time: 16.00min
+[RecUL] Epoch [73/2000], Loss: 1.1176, UL AUC: 0.7403, ACC AUC: 0.8664, ACC NDCG@20: 0.2755, Current time: 16.21min
+[RecUL] Epoch [74/2000], Loss: 1.1388, UL AUC: 0.7220, ACC AUC: 0.8680, ACC NDCG@20: 0.2758, Current time: 16.46min
+[RecUL] Epoch [75/2000], Loss: 1.1168, UL AUC: 0.7350, ACC AUC: 0.8716, ACC NDCG@20: 0.2760, Current time: 16.71min
+[RecUL] Epoch [76/2000], Loss: 1.1083, UL AUC: 0.7391, ACC AUC: 0.8702, ACC NDCG@20: 0.2770, Current time: 16.81min
+[RecUL] Epoch [77/2000], Loss: 1.1419, UL AUC: 0.7348, ACC AUC: 0.8688, ACC NDCG@20: 0.2770, Current time: 17.00min
+[RecUL] Epoch [78/2000], Loss: 1.1089, UL AUC: 0.7266, ACC AUC: 0.8699, ACC NDCG@20: 0.2765, Current time: 17.25min
+[RecUL] Epoch [79/2000], Loss: 1.1077, UL AUC: 0.7350, ACC AUC: 0.8706, ACC NDCG@20: 0.2764, Current time: 17.50min
+[RecUL] Epoch [80/2000], Loss: 1.1473, UL AUC: 0.7543, ACC AUC: 0.8694, ACC NDCG@20: 0.2759, Current time: 17.76min
+[RecUL] Epoch [81/2000], Loss: 1.1343, UL AUC: 0.7574, ACC AUC: 0.8677, ACC NDCG@20: 0.2752, Current time: 18.00min
+[RecUL] Epoch [82/2000], Loss: 1.1533, UL AUC: 0.7187, ACC AUC: 0.8704, ACC NDCG@20: 0.2744, Current time: 18.25min
+[RecUL] Epoch [83/2000], Loss: 1.1519, UL AUC: 0.7199, ACC AUC: 0.8691, ACC NDCG@20: 0.2742, Current time: 18.31min
+[RecUL] Epoch [84/2000], Loss: 1.0873, UL AUC: 0.7187, ACC AUC: 0.8691, ACC NDCG@20: 0.2734, Current time: 18.56min
+[RecUL] Epoch [85/2000], Loss: 1.0367, UL AUC: 0.7532, ACC AUC: 0.8690, ACC NDCG@20: 0.2732, Current time: 18.81min
+[RecUL] Epoch [86/2000], Loss: 1.0721, UL AUC: 0.7687, ACC AUC: 0.8683, ACC NDCG@20: 0.2734, Current time: 19.06min
+[RecUL] Epoch [87/2000], Loss: 1.0927, UL AUC: 0.7634, ACC AUC: 0.8683, ACC NDCG@20: 0.2722, Current time: 19.30min
+[RecUL] Epoch [88/2000], Loss: 1.1055, UL AUC: 0.7395, ACC AUC: 0.8696, ACC NDCG@20: 0.2714, Current time: 19.56min
+[RecUL] Epoch [89/2000], Loss: 1.0997, UL AUC: 0.7469, ACC AUC: 0.8672, ACC NDCG@20: 0.2713, Current time: 19.74min
+[RecUL] Epoch [90/2000], Loss: 1.0637, UL AUC: 0.7689, ACC AUC: 0.8670, ACC NDCG@20: 0.2711, Current time: 19.99min
+[RecUL] Epoch [91/2000], Loss: 1.1026, UL AUC: 0.7796, ACC AUC: 0.8665, ACC NDCG@20: 0.2707, Current time: 20.24min
+[RecUL] Epoch [92/2000], Loss: 1.0481, UL AUC: 0.7578, ACC AUC: 0.8693, ACC NDCG@20: 0.2716, Current time: 20.50min
+[RecUL] Epoch [93/2000], Loss: 1.0877, UL AUC: 0.7485, ACC AUC: 0.8720, ACC NDCG@20: 0.2714, Current time: 20.75min
+[RecUL] Epoch [94/2000], Loss: 1.0723, UL AUC: 0.7879, ACC AUC: 0.8687, ACC NDCG@20: 0.2719, Current time: 21.00min
+[RecUL] Epoch [95/2000], Loss: 1.0324, UL AUC: 0.7925, ACC AUC: 0.8635, ACC NDCG@20: 0.2719, Current time: 21.18min
+[RecUL] Epoch [96/2000], Loss: 1.0849, UL AUC: 0.7597, ACC AUC: 0.8714, ACC NDCG@20: 0.2717, Current time: 21.43min
+[RecUL] Epoch [97/2000], Loss: 1.0626, UL AUC: 0.7697, ACC AUC: 0.8701, ACC NDCG@20: 0.2707, Current time: 21.68min
+[RecUL] Epoch [98/2000], Loss: 1.0372, UL AUC: 0.7770, ACC AUC: 0.8695, ACC NDCG@20: 0.2699, Current time: 21.88min
+[RecUL] Epoch [99/2000], Loss: 0.9727, UL AUC: 0.7787, ACC AUC: 0.8719, ACC NDCG@20: 0.2693, Current time: 22.13min
+[RecUL] Epoch [100/2000], Loss: 1.0411, UL AUC: 0.7985, ACC AUC: 0.8709, ACC NDCG@20: 0.2689, Current time: 22.30min
+[RecUL] Epoch [101/2000], Loss: 1.0568, UL AUC: 0.8002, ACC AUC: 0.8695, ACC NDCG@20: 0.2682, Current time: 22.49min
+[RecUL] Epoch [102/2000], Loss: 1.0497, UL AUC: 0.7938, ACC AUC: 0.8713, ACC NDCG@20: 0.2670, Current time: 22.74min
+[RecUL] Epoch [103/2000], Loss: 1.0135, UL AUC: 0.7708, ACC AUC: 0.8765, ACC NDCG@20: 0.2665, Current time: 22.94min
+[RecUL] Epoch [104/2000], Loss: 1.0142, UL AUC: 0.7912, ACC AUC: 0.8722, ACC NDCG@20: 0.2666, Current time: 23.20min
+[RecUL] Epoch [105/2000], Loss: 1.0414, UL AUC: 0.7769, ACC AUC: 0.8727, ACC NDCG@20: 0.2663, Current time: 23.46min
+Best UL AUC: 0.7925, Best epoch: 94, total time: 23.72min
+[RECUL] TRAINING FINISHED. TOTAL TIME: 24.10min.
+Precision@20: 0.2559; Recall@20: 0.1706;  NDCG@20: 0.2798;  
+Precision@50: 0.1905; Recall@50: 0.3175;  NDCG@50: 0.3099;  
+Precision@100: 0.1395; Recall@100: 0.4651;  NDCG@100: 0.3882;  
+Before unlearning: ACC AUC: 0.9108, UL AUC: 0.4898, ACC NDCG@20: 0.2855
+After unlearning: ACC AUC: 0.8635, UL AUC: 0.7925, ACC NDCG@20: 0.2798

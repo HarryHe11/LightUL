@@ -1,0 +1,7 @@
+Read gowalla dataset done! u_num: 29858, i_num: 40981
+Load a pre-trained model
+UL AUC before unlearning: 0.5017
+ACC AUC before unlearning: 0.9346
+NDCG@20 before unlearning: 0.1355
+[IFRU] START TRAINING. CURRENT TIME: 0.02min.
+[IFRU] PREPROCESS FINISHED. CURRENT TIME: 0.00min.

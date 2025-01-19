@@ -1,0 +1,7 @@
+Read yelp2018 dataset done! u_num: 31668, i_num: 38048
+Load a pre-trained model
+ UL AUC before unlearning: 0.5026
+ACC AUC before unlearning: 0.8844
+NDCG@20 before unlearning: 0.0278
+Start phantom user assignment k-means!
+Finish phantom user assignment k-means!
