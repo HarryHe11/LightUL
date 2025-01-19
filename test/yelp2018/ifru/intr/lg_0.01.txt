@@ -3,5 +3,5 @@ Load a pre-trained model
 UL AUC before unlearning: 0.5021
 ACC AUC before unlearning: 0.9280
 NDCG@20 before unlearning: 0.0460
-[IFRU] START TRAINING. CURRENT TIME: 0.02min.
+[IFRU] START TRAINING. CURRENT TIME: 0.04min.
 [IFRU] PREPROCESS FINISHED. CURRENT TIME: 0.00min.

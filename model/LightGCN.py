@@ -61,13 +61,20 @@ class LightGCN(nn.Module):
         users_emb = self.user_embedding.weight
         items_emb = self.item_embedding.weight
         layer_emb = torch.cat([users_emb, items_emb])
-        embs = [layer_emb]
+        
+        # 不存储所有嵌入，而是维护一个运行总和
+        emb_sum = layer_emb
+        
+        # 记录嵌入数量用于平均计算
+        num_embeddings = 1
+        
         for layer in range(self.n_layers):
             layer_emb = self.conv(graph, layer_emb)
-            embs.append(layer_emb)
-
-        embs = torch.stack(embs, dim=1)
-        light_out = torch.mean(embs, dim=1)
+            emb_sum += layer_emb
+            num_embeddings += 1
+        
+        # 计算平均嵌入
+        light_out = emb_sum / num_embeddings
         users, items = torch.split(light_out, [self.num_users, self.num_items])
         return users, items
 
@@ -75,16 +82,18 @@ class LightGCN(nn.Module):
         users_emb = self.user_embedding.weight
         ph_emb = self.ph_user_embedding.weight
         users_emb = torch.cat([users_emb, ph_emb])
-
         items_emb = self.item_embedding.weight
         layer_emb = torch.cat([users_emb, items_emb])
-        embs = [layer_emb]
+        
+        emb_sum = layer_emb
+        num_embeddings = 1
+        
         for layer in range(self.n_layers):
             layer_emb = self.conv(graph, layer_emb)
-            embs.append(layer_emb)
-
-        embs = torch.stack(embs, dim=1)
-        light_out = torch.mean(embs, dim=1)
+            emb_sum += layer_emb
+            num_embeddings += 1
+        
+        light_out = emb_sum / num_embeddings
         users, items = torch.split(light_out, [self.num_users + self.ph_u_num, self.num_items])
         return users, items
 

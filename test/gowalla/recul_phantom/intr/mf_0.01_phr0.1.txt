@@ -1,2 +1,27 @@
 Read gowalla dataset done! u_num: 29858, i_num: 40981
 Load a pre-trained model
+ UL AUC before unlearning: 0.4954
+ACC AUC before unlearning: 0.8977
+NDCG@20 before unlearning: 0.0814
+Start phantom user assignment k-means!
+Finish phantom user assignment k-means!
+[RECUL] START TRAINING. CURRENT TIME: 0.00min.
+[RECUL] PREPROCESS FINISHED. CURRENT TIME: 0.08min.
+[RecUL] Epoch [1/2000], Loss: 3.5981, UL AUC: 0.9335, ACC AUC: 0.7986, ACC NDCG@20: 0.0810, Current time: 0.19min
+[RecUL] Epoch [2/2000], Loss: 3.3021, UL AUC: 0.9131, ACC AUC: 0.8334, ACC NDCG@20: 0.0812, Current time: 0.26min
+[RecUL] Epoch [3/2000], Loss: 3.1335, UL AUC: 0.8999, ACC AUC: 0.8448, ACC NDCG@20: 0.0816, Current time: 0.32min
+[RecUL] Epoch [4/2000], Loss: 3.0640, UL AUC: 0.9048, ACC AUC: 0.8373, ACC NDCG@20: 0.0819, Current time: 0.37min
+[RecUL] Epoch [5/2000], Loss: 3.0446, UL AUC: 0.9001, ACC AUC: 0.8293, ACC NDCG@20: 0.0820, Current time: 0.43min
+[RecUL] Epoch [6/2000], Loss: 3.0108, UL AUC: 0.8926, ACC AUC: 0.8282, ACC NDCG@20: 0.0819, Current time: 0.49min
+[RecUL] Epoch [7/2000], Loss: 3.0063, UL AUC: 0.8834, ACC AUC: 0.8382, ACC NDCG@20: 0.0819, Current time: 0.55min
+[RecUL] Epoch [8/2000], Loss: 2.9751, UL AUC: 0.8837, ACC AUC: 0.8301, ACC NDCG@20: 0.0819, Current time: 0.61min
+[RecUL] Epoch [9/2000], Loss: 2.9742, UL AUC: 0.9018, ACC AUC: 0.8124, ACC NDCG@20: 0.0817, Current time: 0.67min
+[RecUL] Epoch [10/2000], Loss: 2.9616, UL AUC: 0.8669, ACC AUC: 0.8384, ACC NDCG@20: 0.0816, Current time: 0.73min
+[RecUL] Epoch [11/2000], Loss: 2.9607, UL AUC: 0.8909, ACC AUC: 0.8125, ACC NDCG@20: 0.0813, Current time: 0.79min
+Best UL AUC: 0.9335, Best epoch: 0, total time: 0.85min
+[RECUL] TRAINING FINISHED. TOTAL TIME: 0.85min.
+Precision@20: 0.0339; Recall@20: 0.1123;  NDCG@20: 0.0812;  
+Precision@50: 0.0250; Recall@50: 0.2021;  NDCG@50: 0.1103;  
+Precision@100: 0.0189; Recall@100: 0.2991;  NDCG@100: 0.1376;  
+Before unlearning: ACC AUC: 0.8977, UL AUC: 0.4954, ACC NDCG@20: 0.0814
+After unlearning: ACC AUC: 0.7986, UL AUC: 0.9335, ACC NDCG@20: 0.0812

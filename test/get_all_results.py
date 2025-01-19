@@ -8,12 +8,24 @@ def extract_metrics(file_path):
     try:
         with open(file_path, 'r') as f:
             #print(f"Processing {file_path}")
-            content = f.read()
+            content = f.readlines()
             
             # Extract NDCG values using regex
-            ndcg20_match = re.search(r'NDCG@20: (0\.\d+)', content)
-            ndcg50_match = re.search(r'NDCG@50: (0\.\d+)', content)
-            ndcg100_match = re.search(r'NDCG@100: (0\.\d+)', content)
+            # total_time在倒数第6行
+            # 20在倒数第五行
+            # 50在倒数第四行
+            # 100在倒数第三行
+            # UL AUC在倒数第1行
+   
+            total_time_match = re.search(r'TOTAL TIME: (\d+\.\d+min)', content[-6])
+            if not total_time_match:
+                total_time_match = re.search(r'TOTAL RUNNING TIME: (\d+\.\d+min)', content[-6])
+            if not total_time_match:
+                print(f"No total time found in {file_path}")
+            ndcg20_match = re.search(r'NDCG@20: (0\.\d+)', content[-5])
+            ndcg50_match = re.search(r'NDCG@50: (0\.\d+)', content[-4])
+            ndcg100_match = re.search(r'NDCG@100: (0\.\d+)', content[-3])
+            UL_AUC_match = re.search(r'UL AUC: (0\.\d+)', content[-1])
             
             if ndcg20_match:
                 metrics['ndcg20'] = float(ndcg20_match.group(1))
@@ -21,7 +33,10 @@ def extract_metrics(file_path):
                 metrics['ndcg50'] = float(ndcg50_match.group(1))
             if ndcg100_match:
                 metrics['ndcg100'] = float(ndcg100_match.group(1))
-                
+            if UL_AUC_match:
+                metrics['UL_AUC'] = float(UL_AUC_match.group(1))
+            if total_time_match:
+                metrics['total_time'] = float(total_time_match.group(1).split('min')[0])
     except FileNotFoundError:
         pass
     
@@ -76,6 +91,26 @@ def print_results(results):
                           f"{metrics.get('ndcg20', 'N/A'):<10.4f} "
                           f"{metrics.get('ndcg50', 'N/A'):<10.4f} "
                           f"{metrics.get('ndcg100', 'N/A'):<10.4f}")
+                
+            print("-" * 45)
+            # print UL AUC
+            print(f"{'UL AUC':<15} ")
+            for baseline in baselines:
+                metrics = results[dataset][method].get(baseline, {})
+                if metrics:
+                    print(f"{baseline:<15} "
+                          f"{metrics.get('UL_AUC', 'N/A'):<10.4f}")
+            print("-" * 45)
+            print(f"{'total_time':<15} ")
+            for baseline in baselines:
+                if baseline != "none":
+                    metrics = results[dataset][method].get(baseline, {})
+                    if metrics:
+                        time_value = metrics.get('total_time', 'N/A')
+                        if isinstance(time_value, float):
+                            print(f"{baseline:<15} {time_value:<10.4f}")
+                        else:
+                            print(f"{baseline:<15} {time_value}")
 
 def main():
     results = get_all_results()
